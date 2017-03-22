@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--播放器相关颜色-->
+    <color name="colorPlayerBlackTrans">#bb000000</color>
+    <color name="colorPlayerWhite">#FFFFFF</color>
+    <!--进度条的颜色-->
+    <color name="colorPlayerProgressBg">#e1767676</color>
+    <color name="colorPlayerProgressSecond">#c1c1c1</color>
+    <color name="colorPlayerProgress">#FFFFFF</color>
+    <color name="orange">#ff8c58</color>
+    <color name="yel">#e5ca00</color>
+    <color name="hui">#d2d2d2</color>
+
+    <color name="translucent_background">#30000000</color>
+    <color name="translucent_backgroundnew">#00000000</color>
+    <color name="bantouming">#50000000</color>
+
+    <color name="biankuang">#e6e6e6</color>
+
+    <color name="shangjinbg">#ff8c40</color>
+    <color name="bg_new">#f0f0f0</color>
+
+    <color name="mask_color">#88888888</color>
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="tip">#ff6600</color>
+
+    <color name="riqi">#d3d3d3</color>
+
+    <color name="six6">#666666</color>
+    <color name="like_white">#FBFBFB</color>
+    <color name="item_hangye">#939393</color>
+    <color name="item_riqi">#c9c9c9</color>
+    <color name="xinzi">#fe5e25</color>
+    <color name="xingji">#ff6600</color>
+    <color name="background">#f9f9f9</color>
+    <color name="yitijiao">#b2a1a1</color>
+    <color name="root_bg">#f9f9f9</color>
+    <!-- 从底部弹出 -->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="touming">#00000000</color>
+    <!-- 从中间弹出的提示框 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="line">#e6e6e6</color>
+    <color name="six3">#333333</color>
+    <color name="six9">#999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="C2C2C2">#C2C2C2</color>
+    <color name="back">#000</color>
+    <color name="main_textcolor">#818180</color>
+    <color name="tab_tv">#ff7b42</color>
+    <color name="main_title">#ff6600</color>
+    <color name="main_tv">#c6470d</color>
+    <color name="gray">#DDDDDD</color>
+
+    <color name="tv_title">#333333</color>
+    <color name="main_btn">#f25b24</color>
+    <color name="wenzi">#666</color>
+    <color name="tuijian">#333</color>
+    <color name="color_red_f04c62">#f04c62</color>
+    <color name="bg">#4c000000</color>
+    <color name="gray1">#6DDD</color>
+    <color name="time_color">#F2904C</color>
+    <color name="darkgray">#404040ff</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#0ff0ff</color>
+    <color name="lightgray">#c0c0c0ff</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="text_gray2">#ffC3C3C3</color>
+    <color name="magenta">#ff6699ff</color>
+    <color name="cyan">#66ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#ff000000</color>
+    <color name="background_dark">#f0f0f0</color>
+    <color name="camera_bg">#2c2c2c</color>
+    <color name="camera_progress">#2980B9</color>
+    <color name="camera_progress_split">#005084</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="camera_progress_overflow">#1b5d89</color>
+    <color name="camera_theme_selected_bgcolor">#2980B9</color>
+    <color name="camera_bottom_press_bg">#1b1c1f</color>
+    <color name="title_background_color">#fcb840</color>
+    <color name="camera_progress_delete">#f68b2b</color>
+    <color name="translucent_background_80">#CC000000</color>
+    <color name="translucent_background_50">#7f000000</color>
+    <color name="transparent_black_40">#66000000</color>
+    <color name="transparent_black_85">#DA000000</color>
+    <color name="transparent_black_30">#4D000000</color>
+    <color name="publish_at_line">#FF434345</color>
+    <color name="main_bg_color">#e7e7e7</color>
+    <!-- 标题文字 -->
+    <color name="color_23232b">#23232b</color>
+
+    <color name="video_double_back">#1c1b20</color>
+    <!-- 辅助文字 -->
+    <color name="black">#000000</color>
+    <color name="color_919191">#919191</color>
+    <color name="title_bac_color">#F5F5F5</color>
+    <color name="yellow">#ffc800</color>
+    <color name="title_black_color">#23232b</color>
+    <color name="title_txt_color">#23232b</color>
+    <color name="import_video_thumb_mask">#FF151515</color>
+    <color name="translucent_background_75">#BF000000</color>
+    <color name="button_black_background">#424253</color>
+    <color name="import_video_thumb_bg">#FF515154</color>
+    <color name="ziti">#666</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="grey">#333333</color>
+    <color name="global_bg">#9000</color>
+    <color name="color_green_01d9ae">#01D9AE</color>
+    <color name="color_blue_0888ff">#0888ff</color>
+    <color name="color_gray_d9d9d9">#d9d9d9</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+    <color name="grey_white">#F7F7F7</color>
+    <color name="grey_white_has_alpha">#66FAFAFA</color>
+    <color name="color_network_bar_bg_ee4b62">#ee4b62</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_grey_888888">#888888</color>
+    <color name="color_activity_blue_bg">#f7389fff</color>
+    <color name="color_green_00ae8c">#00ae8c</color>
+    <color name="split_line_grey_color_d9d9d9">#D9D9D9</color>
+    <color name="green_4DC0A4">#4DC0A4</color>
+    <color name="gray7">#c5c4c4</color>
+
+    <color name="color_register_text_normal_1ca086">#1ca086</color>
+    <color name="color_register_text_normal_246b61">#246b61</color>
+    <color name="color_register_text_disable_39b79d">#39b79d</color>
+    <color name="im_list_select_hover">#dbdbdb</color>
+    <color name="color_aaaaaa_content_text">#ffaaaaaa</color>
+    <color name="title_color_01d9ae">#01D9AE</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_green_disable">#a2efe0</color>
+    <color name="color_green_00d3a9">#ff00D3A9</color>
+    <color name="color_red_ccfa3c55">#ccfa3c55</color>
+    <color name="color_black_b3000000">#b3000000</color>
+    <color name="color_mycenter">#333333</color>
+    <color name="color_white_66ffffff">#66ffffff</color>
+    <color name="color_white_ffffffff">#ffffffff</color>
+    <color name="color_blue_1081ea">#1081ea</color>
+    <color name="color_grey_eaeaea">#eaeaea</color>
+    <color name="color_green_4bbda2">#4bbda2</color>
+    <color name="color_yellow_fcf3cd">#fcf3cd</color>
+
+    <!-- main bg color -->
+    <color name="g_child_page_bg_color">#FFFFFF</color>
+    <color name="list_bg_color">#FFFFFF</color>
+
+
+    <!-- session -->
+    <color name="color_message_default_bg">#e9ecf0</color>
+    <color name="input_panel_text_color_757572">#757572</color>
+    <color name="color_gray_cbd0d8">#cbd0d8</color>
+    <color name="help_color">#ff999999</color>
+
+    <!-- image picker -->
+    <color name="color_split_line_d9d9d9">#d9d9d9</color>
+    <color name="color_split_line_cccccc">#cccccc</color>
+
+    <!-- contact -->
+    <color name="contact_list_hover">#d9d9d9</color>
+    <color name="contact_letter_idx_bg">#33000000</color>
+    <color name="contacts_letters_color">#80807c</color>
+    <color name="bussiness_card_gridview_bg">#ECF1F5</color>
+    <color name="press_mask">#33000000</color>
+    <color name="color_grey_ababab">#ababab</color>
+    <color name="color_yellow_796413">#796413</color>
+    <color name="color_yellow_b39729">#b39729</color>
+
+
+    <!-- setting -->
+    <color name="color_black_ff333333">#ff333333</color>
+    <color name="color_black_ff666666">#ff666666</color>
+    <color name="color_black_ff999999">#ff999999</color>
+    <color name="color_gray_bfc2c5">#bfc2c5</color>
+</resources>
+
+

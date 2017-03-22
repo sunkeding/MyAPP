@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:text="map操作符"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:textRadius="4dp"
+            app:textSolidColor="@color/main_title" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:text="flatMap操作符"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:textRadius="4dp"
+            app:textSolidColor="@color/red" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:text="延时操作" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:text="每隔xx秒后执行yy操作"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:textRadius="4dp"
+            app:textSolidColor="@color/blue" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:text="每隔xx秒后执行yy操作，直到某个条件满足则停止"
+            android:textColor="@color/green"
+            android:textSize="17sp"
+            app:textRadius="4dp"
+            app:textSolidColor="@color/main_title" />
+    </LinearLayout>
+</ScrollView>
