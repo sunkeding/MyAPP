@@ -66,5 +66,16 @@
             android:textSize="17sp"
             app:textRadius="4dp"
             app:textSolidColor="@color/main_title" />
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:text="每隔xx秒后执行yy操作Handler实现"
+            android:textColor="@color/green"
+            android:textSize="17sp"
+            app:textRadius="4dp"
+            app:textSolidColor="@color/main_title" />
     </LinearLayout>
 </ScrollView>

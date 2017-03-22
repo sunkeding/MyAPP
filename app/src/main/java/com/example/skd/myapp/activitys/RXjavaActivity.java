@@ -1,5 +1,7 @@
 package com.example.skd.myapp.activitys;
 
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -38,9 +40,33 @@ public class RXjavaActivity extends BaseActivity {
     CustomTextView tv4;
     @Bind(R.id.tv5)
     CustomTextView tv5;
+    @Bind(R.id.tv6)
+    CustomTextView tv6;
     private String airtxt = "";
     int num = 0;
     int num2 = 0;
+    int num3 = 0;
+    private final static int MSG = 10000;
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what == MSG) {
+                num3++;
+                tv6.setText(num3 + "");
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (num3 == 5) {
+                            return;
+                        }
+                        handler.sendEmptyMessage(MSG);
+                    }
+                }, 1000);
+            }
+        }
+    };
+
 
     @Override
     protected void initListener() {
@@ -63,7 +89,7 @@ public class RXjavaActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.tv1, R.id.tv2, R.id.tv3, R.id.tv4, R.id.tv5})
+    @OnClick({R.id.tv1, R.id.tv2, R.id.tv3, R.id.tv4, R.id.tv5, R.id.tv6})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv1://map操作符
@@ -85,6 +111,10 @@ public class RXjavaActivity extends BaseActivity {
 
                 dointervalnew();
 
+
+                break;
+            case R.id.tv6://Handler实现轮询
+                handler.sendEmptyMessage(MSG);
 
                 break;
         }
@@ -231,7 +261,5 @@ public class RXjavaActivity extends BaseActivity {
 
     }
 
-    @OnClick(R.id.tv5)
-    public void onClick() {
-    }
+
 }
