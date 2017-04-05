@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\cmbkeyboard.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\exploded-aar\\MyAPP.lib\\pingpp\\unspecified\\res\\layout\\cmbkeyboard.xml"
+    },
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pay_way_dialog.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\layout\\fragment_pay_way_dialog.xml"
+    },
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\pingpp_bill_item.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\layout\\pingpp_bill_item.xml"
+    },
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\pingpp_pay_channel_item.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\layout\\pingpp_pay_channel_item.xml"
+    },
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\pingpp_activity_pay_successed.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\layout\\pingpp_activity_pay_successed.xml"
+    },
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\pingpp_activity_pay.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\layout\\pingpp_activity_pay.xml"
+    },
+    {
+        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pingpp_payment.xml",
+        "source": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\exploded-aar\\MyAPP.lib\\pingpp\\unspecified\\res\\layout\\activity_pingpp_payment.xml"
+    }
+]

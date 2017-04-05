@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.NetActivity;
+import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
 import com.example.skd.myapp.base.BaseActivity;
@@ -122,6 +123,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("HandlerThread"));
         list.add(new SampleBean("Rxpermissions"));
         list.add(new SampleBean("ViewStub And Merge"));
+        list.add(new SampleBean("Ping++支付"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -169,6 +171,11 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "ViewStub And Merge":
                             startActivity(new Intent(MainActivity.this, ViewStubAndMergeActivity.class));
+
+
+                            break;
+                        case "Ping++支付":
+                            startActivity(new Intent(MainActivity.this, PingActivity.class));
 
 
                             break;

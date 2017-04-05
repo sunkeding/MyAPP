@@ -1,1 +1,1 @@
-include ':app', ':skd_net'
+include ':app', ':skd_net', ':lib:bdwallet_pay_sdk', ':lib:pingpp', ':lib:pingpp_one'
