@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.skd.myapp.R;
 import com.example.skd.myapp.base.BaseActivity;
+import com.example.skd.myapp.bean.LekeChargeBean;
 import com.example.skd.myapp.views.CustomTextView;
 import com.google.gson.Gson;
 import com.pingplusplus.android.Pingpp;
@@ -51,7 +51,8 @@ public class PingActivity extends BaseActivity {
      * 【 http://218.244.151.190/demo/charge 】是 ping++ 为了方便开发者体验 sdk 而提供的一个临时 url 。
      * 该 url 仅能调用【模拟支付控件】，开发者需要改为自己服务端的 url 。
      */
-    private static String YOUR_URL = "http://218.244.151.190/demo/charge";
+//    private static String YOUR_URL = "http://218.244.151.190/demo/charge";
+    private static String YOUR_URL = "http://dms.leoao.com/test/pay";
     //    private static String YOUR_URL = "http://192.168.213.60:8080";
     public static final String URL = YOUR_URL;
 
@@ -83,7 +84,6 @@ public class PingActivity extends BaseActivity {
 
     @Override
     protected void initListener() {
-
     }
 
     @Override
@@ -109,12 +109,13 @@ public class PingActivity extends BaseActivity {
 //                new PaymentTask().execute(new PaymentRequest(CHANNEL_ALIPAY, 1));
 //                RxAsycTask();
                 //异步
-                PaymentRequest paymentRequest = new PaymentRequest(CHANNEL_ALIPAY,1);
-                String data = null;
+                LekeChargeBean paymentRequest =new LekeChargeBean();
+                paymentRequest.setPay(new LekeChargeBean.PayBean("850927297769766912", CHANNEL_ALIPAY, null));
+
                 String json = new Gson().toJson(paymentRequest);
                 OkHttpClient client = new OkHttpClient();//创建okhttp实例
                 MediaType type = MediaType.parse("application/json; charset=utf-8");
-                RequestBody body=RequestBody.create(type,json);
+                RequestBody body = RequestBody.create(type, json);
                 Request request = new Request.Builder()
                         .url(URL)
                         .post(body)
@@ -126,13 +127,14 @@ public class PingActivity extends BaseActivity {
                     public void onFailure(Call call, IOException e) {
 
                     }
+
                     //请求成功时调用
                     @Override
                     public void onResponse(Call call, final Response response) throws IOException {
                         if (response.isSuccessful()) {
-                            Log.d("11111111", ""+"onResponse: " + response.body().string());
+                            Log.d("skd", "" + "onResponse: " + response.body().string());
                             String string = response.body().string();
-
+                            Pingpp.createPayment(PingActivity.this, string);
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -145,7 +147,9 @@ public class PingActivity extends BaseActivity {
                 break;
             case R.id.tv2:
                 num++;
-                new PaymentTask().execute(new PaymentRequest(CHANNEL_WECHAT, num));
+                LekeChargeBean lekeChargeBean = new LekeChargeBean();
+                lekeChargeBean.setPay(new LekeChargeBean.PayBean("850927297769766912", CHANNEL_ALIPAY, null));
+                new PaymentTask().execute(lekeChargeBean);
 
                 break;
 //            case R.id.tv3:
@@ -154,7 +158,7 @@ public class PingActivity extends BaseActivity {
     }
 
     private void RxAsycTask() {
-        PaymentRequest p=new PaymentRequest(CHANNEL_ALIPAY,1);
+        PaymentRequest p = new PaymentRequest(CHANNEL_ALIPAY, 1);
         Observable.just(p).map(new Func1<PaymentRequest, String>() {
             @Override
             public String call(PaymentRequest paymentRequest) {
@@ -174,25 +178,25 @@ public class PingActivity extends BaseActivity {
                 return data;
             }
         }).subscribeOn(Schedulers.io())
-          .observeOn(AndroidSchedulers.mainThread())
-          .subscribe(new Action1<String>() {
-            @Override
-            public void call(String data) {
-                Log.d("66666", Thread.currentThread().getName());
-                if (null == data) {
-                    showMsg("请求出错", "请检查URL", "URL无法获取charge");
-                    return;
-                }
-                Log.d("PingActivity", "onPostExecute方法data=" + data);
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<String>() {
+                    @Override
+                    public void call(String data) {
+                        Log.d("66666", Thread.currentThread().getName());
+                        if (null == data) {
+                            showMsg("请求出错", "请检查URL", "URL无法获取charge");
+                            return;
+                        }
+                        Log.d("PingActivity", "onPostExecute方法data=" + data);
 //            Pingpp.createPayment(ClientSDKActivity.this, data);
-                //QQ钱包调起支付方式  “qwalletXXXXXXX”需与AndroidManifest.xml中的data值一致
-                //建议填写规则:qwallet + APP_ID
-                Pingpp.createPayment(PingActivity.this, data, "qwalletXXXXXXX");
-            }
-        });
+                        //QQ钱包调起支付方式  “qwalletXXXXXXX”需与AndroidManifest.xml中的data值一致
+                        //建议填写规则:qwallet + APP_ID
+                        Pingpp.createPayment(PingActivity.this, data, "qwalletXXXXXXX");
+                    }
+                });
     }
 
-    class PaymentTask extends AsyncTask<PaymentRequest, Void, String> {
+    class PaymentTask extends AsyncTask<LekeChargeBean, Void, String> {
 
         @Override
         protected void onPreExecute() {
@@ -205,47 +209,16 @@ public class PingActivity extends BaseActivity {
         }
 
         @Override
-        protected String doInBackground(PaymentRequest... pr) {
+        protected String doInBackground(LekeChargeBean... pr) {
 
-            PaymentRequest paymentRequest = pr[0];
+            LekeChargeBean paymentRequest = pr[0];
             String data = null;
             String json = new Gson().toJson(paymentRequest);
             Log.d("PingActivity", "doInBackground方法json=" + json);
 
             try {
                 //向Your Ping++ Server SDK请求数据
-//                json="{\n" +
-//                        "  \"name\": \"string\",\n" +
-//                        "  \"sourceType\": 0,\n" +
-//                        "  \"type\": 0,\n" +
-//                        "  \"userId\": 0,\n" +
-//                        "  \"coachId\": 0,\n" +
-//                        "  \"coachName\": \"string\",\n" +
-//                        "  \"username\": \"string\",\n" +
-//                        "  \"cellphone\": \"string\",\n" +
-//                        "  \"operatorId\": 0,\n" +
-//                        "  \"orderPrice\": 0,\n" +
-//                        "  \"factPrice\": 0,\n" +
-//                        "  \"clientIp\": 0,\n" +
-//                        "  \"notify_url\": \"string\",\n" +
-//                        "  \"storeAreaId\": 0,\n" +
-//                        "  \"cityId\": 0,\n" +
-//                        "  \"expire\": 0,\n" +
-//                        "  \"goodsType\": \"string\",\n" +
-//                        "  \"allRemark\": \"string\",\n" +
-//                        "  \"goodsEntities\": [\n" +
-//                        "    {\n" +
-//                        "      \"goodsNo\": \"string\",\n" +
-//                        "      \"goodsName\": \"string\",\n" +
-//                        "      \"goodsNum\": 0,\n" +
-//                        "      \"biztType\": 0,\n" +
-//                        "      \"onegGoodsPrice\": 0,\n" +
-//                        "      \"orderPrice\": 0,\n" +
-//                        "      \"factPrice\": 0\n" +
-//                        "    }\n" +
-//                        "  ],\n" +
-//                        "  \"orderNo\": \"string\"\n" +
-//                        "}";
+
                 data = postJson(URL, json);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -264,10 +237,10 @@ public class PingActivity extends BaseActivity {
                 return;
             }
             Log.d("PingActivity", "onPostExecute方法data=" + data);
-//            Pingpp.createPayment(ClientSDKActivity.this, data);
+            Pingpp.createPayment(PingActivity.this, data);
             //QQ钱包调起支付方式  “qwalletXXXXXXX”需与AndroidManifest.xml中的data值一致
             //建议填写规则:qwallet + APP_ID
-            Pingpp.createPayment(PingActivity.this, data, "qwalletXXXXXXX");
+//            Pingpp.createPayment(PingActivity.this, data, "qwalletXXXXXXX");
         }
 
     }
