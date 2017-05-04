@@ -12,10 +12,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.NetActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
+import com.example.skd.myapp.activitys.Test1Activity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
@@ -124,6 +126,8 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("Rxpermissions"));
         list.add(new SampleBean("ViewStub And Merge"));
         list.add(new SampleBean("Ping++支付"));
+        list.add(new SampleBean("分秒倒计时"));
+        list.add(new SampleBean("返回首页功能"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -176,6 +180,16 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "Ping++支付":
                             startActivity(new Intent(MainActivity.this, PingActivity.class));
+
+
+                            break;
+                        case "分秒倒计时":
+                            startActivity(new Intent(MainActivity.this, CountDownActivity.class));
+
+
+                            break;
+                        case "返回首页功能":
+                            startActivity(new Intent(MainActivity.this, Test1Activity.class));
 
 
                             break;

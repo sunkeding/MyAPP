@@ -1,58 +1,58 @@
 [
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_unipay.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_unipay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_done.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_done.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_nocard.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_nocard.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_wechat.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_wechat.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_failed.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_failed.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_cmbkb.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_cmbkb.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_alipay.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_alipay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_baidupay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_baidupay.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_wechat.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_wechat.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_alipay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_alipay.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_success.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_success.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_unionpay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_unionpay.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_cmbkb.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_cmbkb.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_jingdongpay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_jingdongpay.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_done.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_done.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_unipay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_unipay.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_baidupay.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_baidupay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_success.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_success.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_unionpay.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_unionpay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_shopping.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_shopping.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_baidu.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_baidu.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_failed.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_failed.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_wepay.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_wepay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_nocard.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_nocard.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_shopping.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_shopping.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_baidu.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_baidu.png"
     },
     {
-        "merged": "C:\\MyAPP\\lib\\pingpp_one\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pingpp_jingdongpay.png",
-        "source": "C:\\MyAPP\\lib\\pingpp_one\\res\\drawable-xhdpi\\pingpp_jingdongpay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pingpp_wepay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_wepay.png"
     }
 ]

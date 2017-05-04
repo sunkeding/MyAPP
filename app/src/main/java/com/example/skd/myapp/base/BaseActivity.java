@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
+import com.example.skd.myapp.utils.AppManager;
+
 import butterknife.ButterKnife;
 
 /**
@@ -17,6 +19,7 @@ public abstract class BaseActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//设置竖屏
+        AppManager.getInstance().addActivity(this);
         init();
     }
 

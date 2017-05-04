@@ -2,8 +2,11 @@ package com.example.skd.myapp.utils;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Looper;
 import android.util.Log;
+
+import com.example.skd.myapp.MainActivity;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -218,6 +221,15 @@ public class AppManager {
             if (activity.getClass().equals(cls)) {
                 finishActivity(activity);
             }
+        }
+    }
+
+    public static void backToActivity(Context activity, Class<?> cls) {
+        if (null != activity) {
+            Intent intent = new Intent(activity, cls);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            activity.startActivity(intent);
         }
     }
 

@@ -82,6 +82,11 @@
             android:exported="false"
             android:screenOrientation="behind" >
         </activity>
+        <activity android:name=".activitys.CountDownActivity" />
+        <activity android:name=".activitys.Test1Activity" />
+        <activity android:name=".activitys.Test2Activity" />
+        <activity android:name=".activitys.Test3Activity" />
+        <activity android:name=".activitys.Test4Activity" />
     </application>
 
 </manifest>
