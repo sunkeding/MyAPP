@@ -12,11 +12,31 @@
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable/cmbkb_btn_keyboard_key.xml"
     },
     {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/cmbkb_btn_keyboard_key.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/drawable/cmbkb_btn_keyboard_key.xml"
+    },
+    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/pingpp_common_pay_channel_btton.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable/pingpp_common_pay_channel_btton.xml"
     },
     {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/pingpp_common_pay_button_blue.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable/pingpp_common_pay_button_blue.xml"
+    },
+    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/pingpp_common_pay_button_green.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable/pingpp_common_pay_button_green.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/pingpp_channel_item_selector.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable/pingpp_channel_item_selector.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/pingpp_common_pay_channel_btton.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable/pingpp_common_pay_channel_btton.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable/pingpp_common_pay_button_green.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable/pingpp_common_pay_button_green.xml"
     }
 ]

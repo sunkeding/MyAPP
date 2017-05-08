@@ -8,8 +8,24 @@
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/anim/cmbkb_push_bottom_out.xml"
     },
     {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/anim/dialog_enter.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/anim/dialog_enter.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/anim/dialog_exit.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/anim/dialog_exit.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/anim/cmbkb_push_bottom_out.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/anim/cmbkb_push_bottom_out.xml"
+    },
+    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/anim/dialog_exit.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/bundles/debug/res/anim/dialog_exit.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/anim/cmbkb_push_bottom_in.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/anim/cmbkb_push_bottom_in.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/anim/cmbkb_push_bottom_in.xml",

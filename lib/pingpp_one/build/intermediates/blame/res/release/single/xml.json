@@ -1,11 +1,27 @@
 [
     {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_symbols.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_symbols.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_number.xml"
+    },
+    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_symbols.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/xml/cmbkb_number_symbols.xml"
     },
     {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_with_x.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_number_with_x.xml"
+    },
+    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_qwerty.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/xml/cmbkb_qwerty.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_with_dot.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_number_with_dot.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_with_dot.xml",
@@ -20,11 +36,23 @@
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/xml/cmbkb_number_with_change.xml"
     },
     {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_qwerty.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_qwerty.xml"
+    },
+    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_with_x.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/xml/cmbkb_number_with_x.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number.xml",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/xml/cmbkb_number.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_symbols.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_number_symbols.xml"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/xml/cmbkb_number_with_change.xml",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/xml/cmbkb_number_with_change.xml"
     }
 ]
