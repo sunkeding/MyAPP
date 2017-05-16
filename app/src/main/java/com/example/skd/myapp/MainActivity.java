@@ -12,12 +12,17 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
+import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
+import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.NetActivity;
+import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
+import com.example.skd.myapp.activitys.ViewHelperActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
@@ -128,6 +133,11 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("Ping++支付"));
         list.add(new SampleBean("分秒倒计时"));
         list.add(new SampleBean("返回首页功能"));
+        list.add(new SampleBean("FilterView"));
+        list.add(new SampleBean("NineOldAndroids动画"));
+        list.add(new SampleBean("ViewHelper"));
+        list.add(new SampleBean("高斯模糊"));
+        list.add(new SampleBean("MenuLayoutActivity"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -190,6 +200,31 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "返回首页功能":
                             startActivity(new Intent(MainActivity.this, Test1Activity.class));
+
+
+                            break;
+                        case "FilterView":
+                            startActivity(new Intent(MainActivity.this, FilterViewActivity.class));
+
+
+                            break;
+                        case "NineOldAndroids动画":
+                            startActivity(new Intent(MainActivity.this, NineOldActivity.class));
+
+
+                            break;
+                        case "ViewHelper":
+                            startActivity(new Intent(MainActivity.this, ViewHelperActivity.class));
+
+
+                            break;
+                        case "高斯模糊":
+                            startActivity(new Intent(MainActivity.this, BlurActivity.class));
+
+
+                            break;
+                        case "MenuLayoutActivity":
+                            startActivity(new Intent(MainActivity.this, MenuLayoutActivity.class));
 
 
                             break;
