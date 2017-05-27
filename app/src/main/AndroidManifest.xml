@@ -83,10 +83,18 @@
             android:screenOrientation="behind" >
         </activity>
         <activity android:name=".activitys.CountDownActivity" />
-        <activity android:name=".activitys.Test1Activity" />
+        <activity android:name=".activitys.Test1Activity"   />
         <activity android:name=".activitys.Test2Activity" />
         <activity android:name=".activitys.Test3Activity" />
         <activity android:name=".activitys.Test4Activity" />
+        <activity android:name=".activitys.FilterViewActivity" />
+        <activity android:name=".activitys.NineOldActivity" />
+        <activity android:name=".activitys.ViewHelperActivity" />
+        <activity android:name=".activitys.BlurActivity" />
+        <activity android:name=".activitys.MenuLayoutActivity" />
+        <activity android:name=".activitys.ViewPagerActivity" />
+        <activity android:name=".activitys.TestMyActivity" />
+        <activity android:name=".activitys.PicassoActivity" />
     </application>
 
 </manifest>

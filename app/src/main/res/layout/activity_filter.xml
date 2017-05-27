@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.example.skd.myapp.views.DropView
+    android:id="@+id/dropview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></com.example.skd.myapp.views.DropView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_shade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/alpha_black"
+            android:visibility="gone"></View>
+        <include layout="@layout/popview1"></include>
+
+        <include layout="@layout/popview2"></include>
+
+        <include layout="@layout/popview3"></include>
+        <include layout="@layout/popview4"></include>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

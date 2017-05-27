@@ -14,4 +14,11 @@
         <attr name="textNormalTextColor" format="color" />
         <attr name="textSelectedTextColor" format="color" />
     </declare-styleable>
+    <declare-styleable name="filterview">
+        <attr name="title" format="string" />
+        <attr name="unSelectetedTextcolor" format="color" />
+        <attr name="selectetedTextcolor" format="color" />
+        <attr name="unSelecetedIcon" format="reference" />
+        <attr name="selecetedIcon" format="reference" />
+    </declare-styleable>
 </resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.skd.myapp.views.FilterView
+            android:id="@+id/filterview1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:selecetedIcon="@mipmap/down_red"
+            app:selectetedTextcolor="@color/text_color_red"
+            app:title="控件1"
+            app:unSelecetedIcon="@mipmap/screenbar_icon_smallarrow"
+            app:unSelectetedTextcolor="@color/text_color_black60" />
+
+        <com.example.skd.myapp.views.FilterView
+            android:id="@+id/filterview2"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:selecetedIcon="@mipmap/down_red"
+            app:selectetedTextcolor="@color/text_color_red"
+            app:title="控件2"
+            app:unSelecetedIcon="@mipmap/screenbar_icon_smallarrow"
+            app:unSelectetedTextcolor="@color/text_color_black60" />
+
+        <com.example.skd.myapp.views.FilterView
+            android:id="@+id/filterview3"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:selecetedIcon="@mipmap/down_red"
+            app:selectetedTextcolor="@color/text_color_red"
+            app:title="控件3"
+            app:unSelecetedIcon="@mipmap/screenbar_icon_smallarrow"
+            app:unSelectetedTextcolor="@color/text_color_black60" />
+        <com.example.skd.myapp.views.FilterView
+            android:id="@+id/filterview4"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:selecetedIcon="@mipmap/down_red"
+            app:selectetedTextcolor="@color/text_color_red"
+            app:title="测试"
+            app:unSelecetedIcon="@mipmap/screenbar_icon_smallarrow"
+            app:unSelectetedTextcolor="@color/text_color_black60" />
+    </LinearLayout>
+</LinearLayout>

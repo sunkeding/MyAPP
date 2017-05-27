@@ -19,10 +19,13 @@ import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.NetActivity;
 import com.example.skd.myapp.activitys.NineOldActivity;
+import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
+import com.example.skd.myapp.activitys.TestMyActivity;
 import com.example.skd.myapp.activitys.ViewHelperActivity;
+import com.example.skd.myapp.activitys.ViewPagerActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
@@ -138,6 +141,9 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("ViewHelper"));
         list.add(new SampleBean("高斯模糊"));
         list.add(new SampleBean("MenuLayoutActivity"));
+        list.add(new SampleBean("ViewPager"));
+        list.add(new SampleBean("测试布局"));
+        list.add(new SampleBean("picasso加载JPG"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -225,6 +231,21 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "MenuLayoutActivity":
                             startActivity(new Intent(MainActivity.this, MenuLayoutActivity.class));
+
+
+                            break;
+                        case "ViewPager":
+                            startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
+
+
+                            break;
+                        case "测试布局":
+                            startActivity(new Intent(MainActivity.this, TestMyActivity.class));
+
+
+                            break;
+                        case "picasso加载JPG":
+                            startActivity(new Intent(MainActivity.this, PicassoActivity.class));
 
 
                             break;

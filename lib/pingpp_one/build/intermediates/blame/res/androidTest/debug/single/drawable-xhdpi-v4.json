@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/pingpp_success.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/pingpp_success.png"
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/pingpp_baidupay.png",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/pingpp_baidupay.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/pingpp_nocard.png",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/pingpp_nocard.png"
     },
     {
-        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/pingpp_baidupay.png",
-        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/pingpp_baidupay.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/pingpp_success.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/pingpp_success.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/pingpp_baidu.png",

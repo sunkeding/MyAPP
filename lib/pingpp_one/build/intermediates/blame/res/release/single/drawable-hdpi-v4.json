@@ -16,16 +16,16 @@
         "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_key_delete_normal.png"
     },
     {
-        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png"
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-hdpi-v4/cmbkb_space.png",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_space.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-hdpi-v4/cmbkb_backspace_dark_icon.png",
         "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_backspace_dark_icon.png"
     },
     {
-        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-hdpi-v4/cmbkb_space.png",
-        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/exploded-aar/MyAPPTestGit.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_space.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-hdpi-v4/pingpp_back.png",

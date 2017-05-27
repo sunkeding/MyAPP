@@ -20,7 +20,7 @@ android {
     productFlavors {
         fir_test {} //fir测试
         fir_release {} //fir正式
-        yingyonghui{}//应用汇
+        yingyonghui {}//应用汇
         jifeng {}//机锋
         wandoujia {}//豌豆荚
         nduowang {}//N多网
@@ -71,4 +71,5 @@ dependencies {
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
     compile project(':lib:pingpp')
     compile project(':lib:pingpp_one')
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

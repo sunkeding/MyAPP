@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_filter"
+    android:clickable="true">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="middle"
+            android:maxLength="7"
+            android:maxLines="1"
+            tools:text="场地"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color_black60"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_filter"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/screenbar_icon_smallarrow" />
+    </LinearLayout>
+
+</RelativeLayout>

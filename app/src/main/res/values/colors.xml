@@ -150,7 +150,7 @@
     <!-- main bg color -->
     <color name="g_child_page_bg_color">#FFFFFF</color>
     <color name="list_bg_color">#FFFFFF</color>
-
+    <color name="like_yellow">#F5A623</color>
 
     <!-- session -->
     <color name="color_message_default_bg">#e9ecf0</color>
@@ -171,13 +171,95 @@
     <color name="color_grey_ababab">#ababab</color>
     <color name="color_yellow_796413">#796413</color>
     <color name="color_yellow_b39729">#b39729</color>
+    <color name="white_80">#d0ffffff</color>
 
+    <color name="background_tab_pressed">#6633B5E5</color>
 
     <!-- setting -->
     <color name="color_black_ff333333">#ff333333</color>
     <color name="color_black_ff666666">#ff666666</color>
     <color name="color_black_ff999999">#ff999999</color>
     <color name="color_gray_bfc2c5">#bfc2c5</color>
+
+    <color name="alpha_black">#66000000</color>
+
+
+    <color name="leoao_orange_normal">#fa4a11</color>
+
+
+    <color name="sixe">#eeeeee</color>
+
+
+    <!--字体颜色-->
+    <color name="text_color_grey">#99000000</color><!--60不透明度-->
+    <!--30不透明度-->
+    <!--80不透明度-->
+
+
+    <color name="light_grey">#19000000</color>
+    <color name="grey4">#22222c</color>
+
+
+    <!--新颜色 如以上色值与这里的色值一样，尽量用新取名的
+        不透明度对应的值
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00
+    -->
+    <color name="btn_login_black">#c43d25</color>
+    <color name="tab_bar_bg">#121218</color>
+    <color name="text_color_red">#FA4A11</color>
+    <!--80不透明度-->
+    <color name="text_color_black80">#d0000000</color><!--80不透明度-->
+    <color name="text_color_black60">#99000000</color><!--60不透明度-->
+    <color name="text_color_black40">#66000000</color><!--40不透明度-->
+    <!--50不透明度-->
+    <color name="text_color_black50">#80000000</color><!--50不透明度-->
+    <!--30不透明度-->
+    <!--20不透明度-->
+    <!--10不透明度-->
+
+    <!--课程详情页教练名字文字颜色-->
+    <!--课程详情页教练描述文字颜色-->
+    <!--选中的文字颜色-->
+
+    <!--90不透明度-->
+    <!--80不透明度-->
+    <color name="text_color_white60">#99FFFFFF</color><!--60不透明度-->
+    <color name="text_color_white30">#4cFFFFFF</color><!--30不透明度-->
+    <color name="text_color_white10">#1Affffff</color><!--10白色不透明度-->
+    <!--白色不透明度-->
+    <!--不同的背景色-->
+    <color name="background0">#F2F2F2</color>
+    <color name="background1">#FFFFFF</color>
+    <color name="background2">#22222c</color>
+    <color name="background3">#F9F9F9</color>
+    <!--5不透明度,这个不太准确，先用着-->
+    <!--90不透明度-->
+    <color name="line_grey">#19000000</color>
+
+    <color name="background_white60">#99FFFFFF</color><!--60不透明度-->
+    <!--30不透明度-->
+    <!--80不透明度-->
 </resources>
+
 
 
