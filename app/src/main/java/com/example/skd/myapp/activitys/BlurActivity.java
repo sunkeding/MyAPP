@@ -24,7 +24,7 @@ import static android.R.attr.bitmap;
  * Created by skd on 2017/5/12.
  */
 
-public class BlurActivity extends BaseActivity {   //打了标签之后加了的注释
+public class BlurActivity extends BaseActivity {
     @Bind(R.id.iv1)
     ImageView iv1;
     @Bind(R.id.iv2)
@@ -37,14 +37,15 @@ public class BlurActivity extends BaseActivity {   //打了标签之后加了的
     }
 
     private void testBugFix() {
-
+        Log.d("BlurActivity", "修复线上的第二个bug");
     }
 
     @Override
     public void setMyContentView() {
         setContentView(R.layout.activity_blur);
         ButterKnife.bind(this);
-        Glide.with(this).load("https://cdn.leoao.com/HZ-Tank119.png").into(iv2);
+//        Glide.with(this).load("https://cdn.leoao.com/HZ-Tank119.png").into(iv2);
+        Log.d("BlurActivity", "去掉重复的图片加载代码");
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
