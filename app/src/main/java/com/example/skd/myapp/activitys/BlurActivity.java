@@ -29,9 +29,14 @@ public class BlurActivity extends BaseActivity {   //打了标签之后加了的
     ImageView iv1;
     @Bind(R.id.iv2)
     ImageView iv2;
+    int num;
 
     @Override
     protected void initListener() {
+        testBugFix();//假设这个方法就是修复bug
+    }
+
+    private void testBugFix() {
 
     }
 
