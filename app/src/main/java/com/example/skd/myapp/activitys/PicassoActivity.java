@@ -30,7 +30,7 @@ public class PicassoActivity extends BaseActivity {
         ButterKnife.bind(this);
         String url = "https://img.leoao.com/%E7%A7%81%E6%95%99%E4%BD%93%E9%AA%8C%E8%AF%BE.jpg";
         Picasso.with(this).load(url).into(iv);
-        Glide.with(this).load(url).into(iv);
+//        Glide.with(this).load(url).into(iv);
     }
 
     @Override

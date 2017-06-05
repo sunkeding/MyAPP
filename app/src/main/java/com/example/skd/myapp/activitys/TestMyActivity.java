@@ -17,7 +17,7 @@ public class TestMyActivity extends BaseActivity {
 
     @Override
     public void setMyContentView() {
-        setContentView(R.layout.servicetest);
+        setContentView(R.layout.servicetestnew);
         ButterKnife.bind(this);
     }
 
