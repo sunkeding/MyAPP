@@ -21,4 +21,11 @@
         <attr name="unSelecetedIcon" format="reference" />
         <attr name="selecetedIcon" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="DragSelectRecyclerView">
+        <attr name="dsrv_autoScrollHotspotHeight" format="dimension"/>
+        <attr name="dsrv_autoScrollEnabled" format="boolean"/>
+        <attr name="dsrv_autoScrollHotspot_offsetTop" format="dimension"/>
+        <attr name="dsrv_autoScrollHotspot_offsetBottom" format="dimension"/>
+    </declare-styleable>
 </resources>

@@ -17,6 +17,7 @@ import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
+import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
 import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
@@ -144,6 +145,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("ViewPager"));
         list.add(new SampleBean("测试布局"));
         list.add(new SampleBean("picasso加载JPG"));
+        list.add(new SampleBean("RecycleView多选效果"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -246,6 +248,11 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "picasso加载JPG":
                             startActivity(new Intent(MainActivity.this, PicassoActivity.class));
+
+
+                            break;
+                        case "RecycleView多选效果":
+                            startActivity(new Intent(MainActivity.this, MulpitleSelectedActivity.class));
 
 
                             break;
