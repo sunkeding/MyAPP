@@ -3,6 +3,7 @@ package com.example.skd.myapp.activitys;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -37,14 +38,15 @@ public class BlurActivity extends BaseActivity {
     }
 
     private void testBugFix() {
-
+        Log.d("BlurActivity", "修复线上的第二个bug");
     }
 
     @Override
     public void setMyContentView() {
         setContentView(R.layout.activity_blur);
         ButterKnife.bind(this);
-        Glide.with(this).load("https://cdn.leoao.com/HZ-Tank119.png").into(iv2);
+//        Glide.with(this).load("https://cdn.leoao.com/HZ-Tank119.png").into(iv2);
+        Log.d("BlurActivity", "去掉重复的图片加载代码");
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
