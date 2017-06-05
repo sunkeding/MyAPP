@@ -24,7 +24,7 @@ import static android.R.attr.bitmap;
  * Created by skd on 2017/5/12.
  */
 
-public class BlurActivity extends BaseActivity {
+public class BlurActivity extends BaseActivity {   //打了标签之后加了的注释
     @Bind(R.id.iv1)
     ImageView iv1;
     @Bind(R.id.iv2)
