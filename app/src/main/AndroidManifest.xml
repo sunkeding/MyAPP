@@ -96,6 +96,7 @@
         <activity android:name=".activitys.TestMyActivity" />
         <activity android:name=".activitys.PicassoActivity" />
         <activity android:name=".activitys.MulpitleSelectedActivity" />
+        <activity android:name=".activitys.FlowLayoutActivity" />
     </application>
 
 </manifest>

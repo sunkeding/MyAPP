@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.FilterViewActivity;
+import com.example.skd.myapp.activitys.FlowLayoutActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
@@ -146,6 +147,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("测试布局"));
         list.add(new SampleBean("picasso加载JPG"));
         list.add(new SampleBean("RecycleView多选效果"));
+        list.add(new SampleBean("FlowLayout多选效果"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -253,6 +255,11 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "RecycleView多选效果":
                             startActivity(new Intent(MainActivity.this, MulpitleSelectedActivity.class));
+
+
+                            break;
+                        case "FlowLayout多选效果":
+                            startActivity(new Intent(MainActivity.this, FlowLayoutActivity.class));
 
 
                             break;

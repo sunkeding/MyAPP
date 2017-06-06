@@ -14,6 +14,7 @@ import butterknife.ButterKnife;
 
 
 public abstract class BaseActivity extends Activity {
+    protected Activity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public abstract class BaseActivity extends Activity {
 
         setMyContentView();
         ButterKnife.bind(this);
+        mContext=this;
         initView();
         initData();
         initListener();
