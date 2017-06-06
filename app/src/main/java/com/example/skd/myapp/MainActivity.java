@@ -147,7 +147,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("测试布局"));
         list.add(new SampleBean("picasso加载JPG"));
         list.add(new SampleBean("RecycleView多选效果"));
-        list.add(new SampleBean("FlowLayout多选效果"));
+        list.add(new SampleBean("FlowLayout单选多选效果"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -258,7 +258,7 @@ public class MainActivity extends BaseActivity {
 
 
                             break;
-                        case "FlowLayout多选效果":
+                        case "FlowLayout单选多选效果":
                             startActivity(new Intent(MainActivity.this, FlowLayoutActivity.class));
 
 

@@ -7,7 +7,7 @@
 <TextView
     android:id="@+id/tv_sure"
     android:padding="5dp"
-    android:text="确定"
+    android:text="多选确定"
     android:textSize="18sp"
     android:gravity="center"
     android:background="@color/red"
@@ -21,4 +21,20 @@
         app:max_select="3">
 
     </com.example.skd.myapp.views.flowlayout.TagFlowLayout>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv_sure2"
+        android:padding="5dp"
+        android:text="单选确定"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.example.skd.myapp.views.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:max_select="1"></com.example.skd.myapp.views.flowlayout.TagFlowLayout>
 </LinearLayout>
