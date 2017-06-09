@@ -41,6 +41,16 @@ public class FlowLayoutActivity extends BaseActivity {
         mFlowLayout2 = (TagFlowLayout) findViewById(R.id.id_flowlayout2);
         tv_sure = (TextView) findViewById(R.id.tv_sure);
         tv_sure2 = (TextView) findViewById(R.id.tv_sure2);
+        if (mFlowLayout.getSelectedList().size()==0){
+            tv_sure.setEnabled(false);
+        }else {
+            tv_sure.setEnabled(true);
+        }
+        if (mFlowLayout2.getSelectedList().size()==0){
+            tv_sure2.setEnabled(false);
+        }else {
+            tv_sure2.setEnabled(true);
+        }
         multype();
         singletype();
 
@@ -60,7 +70,7 @@ public class FlowLayoutActivity extends BaseActivity {
             }
         };
         mFlowLayout2.setAdapter(tagAdapter);
-        tagAdapter.setSelectedList(1);//设置默认勾选状态
+//        tagAdapter.setSelectedList(1);//设置默认勾选状态
         mFlowLayout2.setOnTagClickListener(new TagFlowLayout.OnTagClickListener()
         {
             @Override
@@ -79,6 +89,12 @@ public class FlowLayoutActivity extends BaseActivity {
             public void onSelected(Set<Integer> selectPosSet)
             {
                 mContext.setTitle("choose:" + selectPosSet.toString());
+                Set<Integer> selectedList = mFlowLayout2.getSelectedList();
+                if (selectedList.size()==0){
+                    tv_sure2.setEnabled(false);
+                }else {
+                    tv_sure2.setEnabled(true);
+                }
             }
         });
     }
@@ -104,6 +120,11 @@ public class FlowLayoutActivity extends BaseActivity {
             @Override
             public boolean onTagClick(View view, int position, FlowLayout parent) {
                 Set<Integer> selectedList = mFlowLayout.getSelectedList();
+                if (selectedList.size()==0){
+                    tv_sure.setEnabled(false);
+                }else {
+                    tv_sure.setEnabled(true);
+                }
                 if (selectedList.size() == 3 && !selectedList.contains(position)) {
                     Toast.makeText(mContext, "您最多只可以选择3个哦", Toast.LENGTH_SHORT).show();
                 }

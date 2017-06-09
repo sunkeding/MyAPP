@@ -10,7 +10,8 @@
     android:text="多选确定"
     android:textSize="18sp"
     android:gravity="center"
-    android:background="@color/red"
+   android:textColor="@color/btntextcolor"
+    android:background="#c83b0d"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
     <com.example.skd.myapp.views.flowlayout.TagFlowLayout
@@ -28,9 +29,10 @@
         android:text="单选确定"
         android:textSize="18sp"
         android:gravity="center"
-        android:background="@color/red"
+        android:textColor="@color/btntextcolor"
+        android:background="#c83b0d"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
     <com.example.skd.myapp.views.flowlayout.TagFlowLayout
         android:id="@+id/id_flowlayout2"
         android:layout_width="fill_parent"
