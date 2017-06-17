@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.NFC" />
 
     <!-- 百度支付额外需要的权限 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -25,6 +25,7 @@
     <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
+        android:name=".app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -40,11 +41,23 @@
             android:name="com.taobao.android.hotfix.RSASECRET"
             android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCs3op+gz9yeKjBm8mO2vte84PHkwE2JPiFYU7Jdn391ZCXwa5DfhDr6iMkR4TJk5EyZbaZKRVkluIlUAIwPV82OzR0zM6NYhI3taKEWwI9CFDQ+I1lxW0fCl8DpzJ9kMBG1qw9czGmNpErUaqnzD2eYSALo1uAX0wJ+tZgBgWvP4cqFqOnAE+zDogQjivqKNkf4kSs+Tt5WkmXZRsmwCoMiuTNn/jPpyolJCZvmw9wTwEq0w1Zzn+L4OJKMAEOm+oQ1cbizexmIuHS9T3b5Vi4xM5HwHTrPGDiwpsc1bfisaPNRNL1kJpWYRp83cSuvadPHfsD8GqfIAgi/v0iEky/AgMBAAECggEAN4+vY8o7ckdlthSkS84GTRZnnJWbJhPr7LLB5+61wAgMWTpfEEJMnga7FMYH3+IWIOSgM8oInjQAq41zpp2TJJMS4ReSq86BnHY8rd2ycnthvkik6bjywa9LqpjqmYEUy6/j3DxSEOIo9othFl2G0IjXC+aNWk1G205L6MEGwrRZASWefaJ/wvvSV8jl1Alwg1Loth780iy8+cMOz9pvZ07Dl5PAhKKYCFlO/JC2CEYxMYgNkHM0jCUXCKMTzsU8f3nO4axNktKHD2iZ6EOFHE/DpsxssRJQo1aKMIzam9/egPwCqEUzroUGZwju/t69Mb5xXTu3DREZ1YNK11vzgQKBgQDe1U6LkHtOeM+qGO5wLA9rLax98oDcBb2Gx4Hq/X/qpiMQgxk7yxWVYmW4xaUwbXb5HN6xsRJLePeUOjl7hZXTUrVXx7fr8h29BiPbFr5iuonokDZ5OlGvcKQoJEawXeOOqCfBniqRr45nh6x3DObLFOwWsYeJoWo3vK2tMEgWJwKBgQDGmXDiq6eNXOmIp6nfwQZqMY+QwS68YxCRuvuut0kB1XYvBkfUvJUfLUn1OZGx+5kCnPYFm070yWMwiGb1tpxc4jf7p4p9Tc73FGGnyoftuxV3FusSLloxOzIFmd7pd3Ro8dgW1NLhbHpbTnSbzjPbinXp0bdKFaBXE5yoxzgLqQKBgBn+bgwvzYKI60ifYekp6p6JFG8Yw9lmvgYj7c7YxXw85yg88sub1Ce5873LKIruqgtDR+MYkdbGBLOA20XCfojJRCg6PwVCGB/9wF8FVy4zLnU3pXMcz3yUukGIgcp/GVWB3ili5vpZrVX8aKz2j1GvXh8DlJkEgFyCIQxr7mzPAoGAUb5Qf4wF4CKxIQVZ33ZUzJrvq7ZIJVRlOoaLF4PrcezJw1tDb6Xbf0Sl32C9vlN/zFqMzQv6+Lh3sj9Cmbp7K6QVROjWEPNYz8w80dKEFm7dy/HL+eTITOE/mpyV6uS3Lob02Zjp381Fo5VsW8EJCUE5fW9LkRvLrmutHK87O1kCgYEAsMJWWTMDndZpnlf5NqnpE31NoPtB7m4XMXvldG9nIIP0nAxyY35u4nsydfKEbxKdIYNvaNx9zhdTW81dhqwRtAYIHiFnswaWJ7wF3H64S06u1fYot5cb/XVTrALxzVJyRJZPp1x8/Ncly3VHo+aSx5j2+DYKz+bEj/BxaYT98uE=" />
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="m.skd.com"
+                    android:scheme="skd" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
         <activity android:name=".activitys.NetActivity" />
@@ -74,16 +87,14 @@
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
-            android:screenOrientation="behind" >
-        </activity>
+            android:screenOrientation="behind"></activity>
         <activity
             android:name="com.alipay.sdk.auth.AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
-            android:screenOrientation="behind" >
-        </activity>
+            android:screenOrientation="behind"></activity>
         <activity android:name=".activitys.CountDownActivity" />
-        <activity android:name=".activitys.Test1Activity"   />
+        <activity android:name=".activitys.Test1Activity" />
         <activity android:name=".activitys.Test2Activity" />
         <activity android:name=".activitys.Test3Activity" />
         <activity android:name=".activitys.Test4Activity" />
@@ -97,6 +108,15 @@
         <activity android:name=".activitys.PicassoActivity" />
         <activity android:name=".activitys.MulpitleSelectedActivity" />
         <activity android:name=".activitys.FlowLayoutActivity" />
+        <activity android:name=".activitys.WebActivity">
+
+        </activity>
+        <activity android:name=".activitys.H5ToNativeActivity" />
+        <activity android:name=".activitys.ShuiYinActivity" />
+        <activity android:name=".activitys.TimeActivity" />
+        <activity android:name=".activitys.InvokeActivity" />
+        <!--<activity android:name=".activitys.LikeDialogActivity" />-->
+        <activity android:name=".activitys.LikeDialogActivity"  android:theme="@style/MyDialogTopRight" />
     </application>
 
 </manifest>

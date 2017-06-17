@@ -8,7 +8,7 @@ import butterknife.ButterKnife;
 /**
  * Created by skd on 2017/5/22.
  */
-
+//@Route(path = "/num/000001")
 public class TestMyActivity extends BaseActivity {
     @Override
     protected void initListener() {
@@ -19,6 +19,9 @@ public class TestMyActivity extends BaseActivity {
     public void setMyContentView() {
         setContentView(R.layout.servicetestnew);
         ButterKnife.bind(this);
+//        ARouter.getInstance().inject(this);
+
+
     }
 
     @Override

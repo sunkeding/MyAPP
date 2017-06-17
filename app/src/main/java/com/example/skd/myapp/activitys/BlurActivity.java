@@ -31,7 +31,6 @@ public class BlurActivity extends BaseActivity {
     @Bind(R.id.iv2)
     ImageView iv2;
     int num;
-
     @Override
     protected void initListener() {
         testBugFix();//假设这个方法就是修复bug

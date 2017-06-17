@@ -5,8 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.skd.myapp.R;
 import com.example.skd.myapp.base.BaseActivity;
@@ -59,6 +61,19 @@ public class Test1Activity extends BaseActivity {
     public void onClick() {
 //        AppManager.getInstance().popToActivity(MainActivity.class);//跳转到指定Activity,并关闭掉中间的所有Activity
         startActivity(new Intent(this, Test2Activity.class));
+    }
+
+    public static void methed() {
+//        Toast.makeText(this, "我是TestActivity中的方法", Toast.LENGTH_SHORT).show();
+        Log.d("Test1Activity", "我是TestActivity中的方法");
+    }
+
+    public interface MyListener {
+        void call();
+    }
+    public MyListener listener;
+    public void setMyListener(MyListener listener){
+        this.listener=listener;
     }
 
 }

@@ -11,12 +11,16 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.FlowLayoutActivity;
+import com.example.skd.myapp.activitys.H5ToNativeActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
+import com.example.skd.myapp.activitys.InvokeActivity;
+import com.example.skd.myapp.activitys.LikeDialogActivity;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
@@ -24,11 +28,14 @@ import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
+import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
 import com.example.skd.myapp.activitys.TestMyActivity;
+import com.example.skd.myapp.activitys.TimeActivity;
 import com.example.skd.myapp.activitys.ViewHelperActivity;
 import com.example.skd.myapp.activitys.ViewPagerActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
+import com.example.skd.myapp.activitys.WebActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
 import com.example.skd.myapp.views.RecycleViewDivier;
@@ -60,7 +67,9 @@ public class MainActivity extends BaseActivity {
     public void setMyContentView() {
         setContentView(R.layout.activity_main);
         initHotfix();
+
     }
+
 
     private void initHotfix() {
         try {
@@ -107,25 +116,25 @@ public class MainActivity extends BaseActivity {
         Integer b = 50;
         Integer c = 1000;
         Integer d = 1000;
-        if (a == b) {
-            Log.d("MainActivity", "相等");
-        } else {
-            Log.d("MainActivity", "不相等");
-
-        }
-        if (c == d) {
-            Log.d("MainActivity", "相等");
-        } else {
-            Log.d("MainActivity", "不相等");
-
-        }
-        if (c.equals(d)) {
-            Log.d("MainActivity", "相等");
-
-        } else {
-            Log.d("MainActivity", "不相等");
-
-        }
+//        if (a == b) {
+//            Log.d("MainActivity", "相等");
+//        } else {
+//            Log.d("MainActivity", "不相等");
+//
+//        }
+//        if (c == d) {
+//            Log.d("MainActivity", "相等");
+//        } else {
+//            Log.d("MainActivity", "不相等");
+//
+//        }
+//        if (c.equals(d)) {
+//            Log.d("MainActivity", "相等");
+//
+//        } else {
+//            Log.d("MainActivity", "不相等");
+//
+//        }
     }
 
     @Override
@@ -148,6 +157,12 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("picasso加载JPG"));
         list.add(new SampleBean("RecycleView多选效果"));
         list.add(new SampleBean("FlowLayout单选多选效果"));
+        list.add(new SampleBean("打开本地html"));
+        list.add(new SampleBean("模拟H5跳转本地Activity"));
+        list.add(new SampleBean("图片添加水印"));
+        list.add(new SampleBean("时间轴布局"));
+        list.add(new SampleBean("Activity调用其他Activity的方法"));
+        list.add(new SampleBean("用Activity实现Dialog效果"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -155,6 +170,12 @@ public class MainActivity extends BaseActivity {
         MyAdapter myAdapter = new MyAdapter(list);
         recycleview.setAdapter(myAdapter);
         myAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Toast.makeText(mContext, "MainActivity_onNewIntent", Toast.LENGTH_SHORT).show();
     }
 
     class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -263,6 +284,39 @@ public class MainActivity extends BaseActivity {
 
 
                             break;
+                        case "打开本地html":
+                            startActivity(new Intent(MainActivity.this, WebActivity.class));
+
+//                            ARouter.getInstance().build("/platform/test1").navigation();
+                            break;
+                        case "模拟H5跳转本地Activity":
+                            startActivity(new Intent(MainActivity.this, H5ToNativeActivity.class));
+
+
+                            break;
+                        case "图片添加水印":
+                            startActivity(new Intent(MainActivity.this, ShuiYinActivity.class));
+
+
+                            break;
+                        case "时间轴布局":
+                            startActivity(new Intent(MainActivity.this, TimeActivity.class));
+
+
+                            break;
+                        case "Activity调用其他Activity的方法":
+                            startActivity(new Intent(MainActivity.this, InvokeActivity.class));
+
+
+                            break;
+                        case "用Activity实现Dialog效果":
+                            Intent intent = new Intent(MainActivity.this, LikeDialogActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.activity_open,0);
+
+                            break;
+
                     }
                 }
             });

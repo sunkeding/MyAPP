@@ -10,6 +10,11 @@ android {
         versionCode 1
         versionName "2.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
     }
     buildTypes {
         release {
@@ -33,7 +38,7 @@ android {
         yiyonghui {}//易用汇
         meizu {}//魅族
         maopo {}//冒泡
-        _360 {}//360
+//        _360 {}//360
         sougo {}//搜狗
         yingyongbao {}//应用宝
         suning {}//苏宁
@@ -71,5 +76,9 @@ dependencies {
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
     compile project(':lib:pingpp')
     compile project(':lib:pingpp_one')
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'// 替换成最新版本, 需要注意的是api
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+//    compile 'com.alibaba:arouter-api:1.2.1.1'
+//    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1' //todo 这句话写着编译死活通不过，导致Arouter无法正常使用，Error:Failed to resolve: annotationProcessor
+
 }
