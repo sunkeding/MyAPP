@@ -29,7 +29,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/layout/cmbkeyboard.xml",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/layout/cmbkeyboard.xml"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/layout/cmbkeyboard.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/layout/pingpp_bill_item.xml",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/layout/activity_pingpp_payment.xml",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/layout/activity_pingpp_payment.xml"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/layout/activity_pingpp_payment.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/layout/pingpp_activity_pay_successed.xml",

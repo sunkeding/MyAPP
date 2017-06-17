@@ -21,7 +21,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/layout/activity_pingpp_payment.xml",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/layout/activity_pingpp_payment.xml"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/layout/activity_pingpp_payment.xml"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/layout/activity_pingpp_payment.xml",
@@ -41,7 +41,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/layout/cmbkeyboard.xml",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/layout/cmbkeyboard.xml"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/layout/cmbkeyboard.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/layout/pingpp_bill_item.xml",

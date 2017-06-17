@@ -13,23 +13,23 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/tips_bg.9.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/tips_bg.9.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/tips_bg.9.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_backspace_dark_icon.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_backspace_dark_icon.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_backspace_dark_icon.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_shift_normal.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_shift_normal.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_shift_normal.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_list_separator.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_list_separator.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_list_separator.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_emotionstore_progresscancelbtn.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_emotionstore_progresscancelbtn.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_emotionstore_progresscancelbtn.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_shift_actived.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_shift_actived.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_shift_actived.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_shift_dark_normal.png",
@@ -57,11 +57,11 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_btn_pressed.9.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_btn_pressed.9.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_btn_pressed.9.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_space.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_space.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_space.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_btn_pressed.9.png",
@@ -73,15 +73,15 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_logo.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_logo.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_logo.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/pingpp_back.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/pingpp_back.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/pingpp_back.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_backspace_icon.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_backspace_icon.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_backspace_icon.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_logo.png",
@@ -101,7 +101,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_key_delete_normal.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_key_delete_normal.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_key_delete_normal.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_shift_actived.png",
@@ -109,7 +109,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_btn_normal.9.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_btn_normal.9.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_btn_normal.9.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_space.png",
@@ -121,18 +121,18 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_bg.9.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_bg.9.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_bg.9.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_space_dark.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_space_dark.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_space_dark.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_shift_dark_normal.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_shift_dark_normal.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_shift_dark_normal.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_sym_keyboard_space.png"
     }
 ]

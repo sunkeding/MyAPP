@@ -13,7 +13,7 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/anim/cmbkb_push_bottom_out.xml",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/anim/cmbkb_push_bottom_out.xml"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/anim/cmbkb_push_bottom_out.xml"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/anim/dialog_enter.xml",
@@ -29,6 +29,6 @@
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/debug/anim/cmbkb_push_bottom_in.xml",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/exploded-aar/MyAPP.lib/pingpp/unspecified/res/anim/cmbkb_push_bottom_in.xml"
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/anim/cmbkb_push_bottom_in.xml"
     }
 ]

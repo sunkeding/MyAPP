@@ -4,16 +4,16 @@
         "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_baidu.png"
     },
     {
-        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_shopping.png",
-        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/res/drawable-xhdpi/pingpp_shopping.png"
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_jingdongpay.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_jingdongpay.png"
     },
     {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_wepay.png",
         "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_wepay.png"
     },
     {
-        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_jingdongpay.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp_one/res/drawable-xhdpi/pingpp_jingdongpay.png"
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_shopping.png",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/res/drawable-xhdpi/pingpp_shopping.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_nocard.png",
@@ -28,12 +28,12 @@
         "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/res/drawable-xhdpi/pingpp_done.png"
     },
     {
-        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_jingdongpay.png",
-        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/res/drawable-xhdpi/pingpp_jingdongpay.png"
-    },
-    {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_unipay.png",
         "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/res/drawable-xhdpi/pingpp_unipay.png"
+    },
+    {
+        "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_jingdongpay.png",
+        "source": "/Users/skd/MyAPPTestGit/lib/pingpp_one/res/drawable-xhdpi/pingpp_jingdongpay.png"
     },
     {
         "merged": "/Users/skd/MyAPPTestGit/lib/pingpp_one/build/intermediates/res/merged/release/drawable-xhdpi-v4/pingpp_alipay.png",
