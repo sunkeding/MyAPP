@@ -117,6 +117,8 @@
         <activity android:name=".activitys.InvokeActivity" />
         <!--<activity android:name=".activitys.LikeDialogActivity" />-->
         <activity android:name=".activitys.LikeDialogActivity"  android:theme="@style/MyDialogTopRight" />
+        <activity android:name=".activitys.BlurActivityNew" />
+        <activity android:name=".activitys.BlurTwoActivity" />
     </application>
 
 </manifest>

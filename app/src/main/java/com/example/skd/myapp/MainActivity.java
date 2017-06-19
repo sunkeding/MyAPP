@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.skd.myapp.activitys.BlurActivity;
+import com.example.skd.myapp.activitys.BlurTwoActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.FlowLayoutActivity;
@@ -163,6 +164,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("时间轴布局"));
         list.add(new SampleBean("Activity调用其他Activity的方法"));
         list.add(new SampleBean("用Activity实现Dialog效果"));
+        list.add(new SampleBean("高斯模糊效果2"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -313,10 +315,14 @@ public class MainActivity extends BaseActivity {
                             Intent intent = new Intent(MainActivity.this, LikeDialogActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(intent);
-                            overridePendingTransition(R.anim.activity_open,0);
+                            overridePendingTransition(R.anim.activity_open, 0);
 
                             break;
+                        case "高斯模糊效果2":
+                            startActivity(new Intent(MainActivity.this, BlurTwoActivity.class));
 
+
+                            break;
                     }
                 }
             });
