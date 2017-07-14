@@ -117,8 +117,12 @@
         <activity android:name=".activitys.InvokeActivity" />
         <!--<activity android:name=".activitys.LikeDialogActivity" />-->
         <activity android:name=".activitys.LikeDialogActivity"  android:theme="@style/MyDialogTopRight" />
-        <activity android:name=".activitys.BlurActivityNew" />
         <activity android:name=".activitys.BlurTwoActivity" />
+        <activity android:name=".activitys.TestBuJuActivity" />
+        <activity android:name=".activitys.PaintActivity" />
+        <activity android:name=".activitys.ListActivity" />
+        <activity android:name=".activitys.AnimActivity" />
+        <activity android:name=".activitys.OkHttpActivity" />
     </application>
 
 </manifest>

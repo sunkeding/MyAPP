@@ -198,6 +198,12 @@
 
     <color name="light_grey">#19000000</color>
     <color name="grey4">#22222c</color>
+    <color name="text_color_black30">#22222c</color>
+    <color name="line_color_black5">#22222c</color>
+    <color name="line_color_black10">#22222c</color>
+    <color name="btn_bg">#FA4A11</color>
+
+
 
 
     <!--新颜色 如以上色值与这里的色值一样，尽量用新取名的

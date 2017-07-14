@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="152dp"
+    android:gravity="bottom"
+    android:background="@color/white"
+    android:id="@+id/ll_signstate2"
+    android:orientation="vertical">
+
+    <include layout="@layout/line_match_black10"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="22.5dp">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/text_color_black10"
+                android:minHeight="50dp"></View>
+
+            <TextView
+                android:id="@+id/tv_oval1"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/bg_oval_black_5dp" />
+
+            <TextView
+                android:id="@+id/tv_oval2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+
+                android:layout_below="@+id/tv_oval1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_oval_black_5dp" />
+            <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="7.5dp"-->
+            <!--android:background="@color/text_color_black10"></View>-->
+            <!--<TextView-->
+            <!--android:background="@drawable/bg_oval_black_5dp"-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="5dp" />-->
+            <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:background="@color/text_color_black10"></View>-->
+            <!--<TextView-->
+            <!--android:background="@drawable/bg_oval_black_5dp"-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="5dp" />-->
+            <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="7.5dp"-->
+            <!--android:background="@color/text_color_black10"></View>-->
+            <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="match_parent"></View>-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_state2_sign1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="教练于12:30签到成功"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.example.skd.myapp.views.CustomTextView
+                    android:id="@+id/tv_state2_sign2"
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_state2_sign1"
+                    android:gravity="center"
+                    android:text="迟到"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:textRadius="50dp"
+                    app:textSolidColor="#FFAD26" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_state2_sign3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="教练于12:30签到成功"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.example.skd.myapp.views.CustomTextView
+                    android:id="@+id/tv_state2_sign4"
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_state2_sign3"
+                    android:gravity="center"
+                    android:text="迟到"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:textRadius="50dp"
+                    app:textSolidColor="#FFAD26" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color_black5"></View>
+
+            <TextView
+                android:id="@+id/tv_state2_tip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="抱歉，本次课程你没有在约定时间内到达上课场地，课时费已被扣除"
+                android:textColor="@color/text_color_black30"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_state2_tip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="若有其他问题，可咨询客服MM"
+                android:textColor="@color/text_color_black30"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

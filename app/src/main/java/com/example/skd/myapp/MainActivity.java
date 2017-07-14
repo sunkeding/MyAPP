@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.skd.myapp.activitys.AnimActivity;
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.BlurTwoActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
@@ -22,15 +23,19 @@ import com.example.skd.myapp.activitys.H5ToNativeActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.InvokeActivity;
 import com.example.skd.myapp.activitys.LikeDialogActivity;
+import com.example.skd.myapp.activitys.ListActivity;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
 import com.example.skd.myapp.activitys.NineOldActivity;
+import com.example.skd.myapp.activitys.OkHttpActivity;
+import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
+import com.example.skd.myapp.activitys.TestBuJuActivity;
 import com.example.skd.myapp.activitys.TestMyActivity;
 import com.example.skd.myapp.activitys.TimeActivity;
 import com.example.skd.myapp.activitys.ViewHelperActivity;
@@ -165,6 +170,11 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("Activity调用其他Activity的方法"));
         list.add(new SampleBean("用Activity实现Dialog效果"));
         list.add(new SampleBean("高斯模糊效果2"));
+        list.add(new SampleBean("布局测试"));
+        list.add(new SampleBean("自定义View画圆角矩形"));
+        list.add(new SampleBean("ListView"));
+        list.add(new SampleBean("Activity切换动画"));
+        list.add(new SampleBean("OKhttp"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -320,6 +330,31 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "高斯模糊效果2":
                             startActivity(new Intent(MainActivity.this, BlurTwoActivity.class));
+
+
+                            break;
+                        case "布局测试":
+                            startActivity(new Intent(MainActivity.this, TestBuJuActivity.class));
+
+
+                            break;
+                        case "自定义View画圆角矩形":
+                            startActivity(new Intent(MainActivity.this, PaintActivity.class));
+
+
+                            break;
+                        case "ListView":
+                            startActivity(new Intent(MainActivity.this, ListActivity.class));
+
+
+                            break;
+                        case "Activity切换动画":
+                            startActivity(new Intent(MainActivity.this, AnimActivity.class));
+
+
+                            break;
+                        case "OKhttp":
+                            startActivity(new Intent(MainActivity.this, OkHttpActivity.class));
 
 
                             break;

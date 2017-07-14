@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_signstate3"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/line_match_black10"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+        <View
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/text_color_black10"></View>
+        <TextView
+            android:id="@+id/tv_oval1"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_oval_black_5dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_state3_sign1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_oval1"
+            android:text="教练于12:30签到成功"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv_state3_sign2"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_state3_sign1"
+            android:gravity="center"
+            android:text="迟到"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:textRadius="50dp"
+            app:textSolidColor="#6EC174" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv_state3_sign3"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_state3_sign2"
+            android:gravity="center"
+            android:text="迟到"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:textRadius="50dp"
+            app:textSolidColor="#FFAD26" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_black10"
+            android:layout_marginLeft="1.5dp"></View>
+
+        <TextView
+            android:id="@+id/tv_state3_coachtip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/view"
+            android:background="@drawable/textbg"
+            android:maxHeight="100dp"
+            android:minHeight="41dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="临时改了地点，店在西溪创立方店在西溪创立方店" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp">
+
+        <View
+            android:background="@color/black"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1.5dp"></View>
+
+        <TextView
+            android:id="@+id/tv_oval2"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_oval_black_5dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tv_oval2"
+            android:layout_marginLeft="1.5dp"></View>
+
+        <TextView
+            android:id="@+id/tv_state3_sign4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true"
+            android:text="教练于12:30签到成功"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.example.skd.myapp.views.CustomTextView
+            android:id="@+id/tv_state3_sign5"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_state3_sign4"
+            android:gravity="center"
+            android:text="外勤"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:textRadius="50dp"
+            app:textSolidColor="#6EC174" />
+    </RelativeLayout>
+</LinearLayout>

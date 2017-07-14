@@ -27,6 +27,7 @@
 
             <ImageView
                 android:id="@+id/header_logo"
+                android:layout_marginLeft="100dp"
                 android:layout_width="@dimen/header_logo_size"
                 android:layout_height="@dimen/min_header_height"
                 android:src="@drawable/ic_header_logo" />
@@ -36,6 +37,11 @@
                 android:layout_width="150dip"
                 android:layout_height="48dip"
                 android:text="向下移动" />
+            <Button
+                android:id="@+id/btn_moveDown2"
+                android:layout_width="150dip"
+                android:layout_height="48dip"
+                android:text="测试动画" />
             <Button
                 android:id="@+id/btn_moveUp"
                 android:layout_width="150dip"
