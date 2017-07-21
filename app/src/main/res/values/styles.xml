@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="MenuStyle">
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">50dp</item>
@@ -17,13 +18,14 @@
         <item name="android:layout_height">45dp</item>
     </style>
     <!--设置Activity透明-->
-    <style name="myTransparent" >
+    <style name="myTransparent">
         <item name="android:windowBackground">@color/white_80</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
 
     </style>
-    <style name="MyDialogTopRight"  >
+
+    <style name="MyDialogTopRight">
         <!--<item name="android:windowBackground">@android:color/transparent</item>-->
         <item name="android:windowBackground">@color/text_color_black50</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -39,8 +41,34 @@
         <item name="android:activityCloseEnterAnimation">@anim/scale_in</item>
         <item name="android:activityCloseExitAnimation">@anim/scale_out</item>
     </style>
+
     <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/photo_choose_bg</item>
         <item name="android:windowNoTitle">true</item><!--除去title-->
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>    <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>    <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>    <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="style_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/main_menu_animstyle</item>
+
     </style>
 </resources>

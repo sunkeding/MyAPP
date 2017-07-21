@@ -1,5 +1,6 @@
 package com.example.skd.myapp.activitys;
 
+import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.skd.myapp.MainActivity;
@@ -41,5 +42,10 @@ public class TestActivity extends BaseActivity {
     @OnClick(R.id.bt_test)
     public void onClick() {
         AppManager.getInstance().popToActivity(MainActivity.class);//跳转到指定Activity,并关闭掉中间的所有Activity
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 }

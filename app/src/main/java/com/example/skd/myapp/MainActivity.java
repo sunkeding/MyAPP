@@ -13,10 +13,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.skd.myapp.activitys.AiGeCustomViewActivity;
 import com.example.skd.myapp.activitys.AnimActivity;
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.BlurTwoActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
+import com.example.skd.myapp.activitys.DialogFragActivity;
 import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.FlowLayoutActivity;
 import com.example.skd.myapp.activitys.H5ToNativeActivity;
@@ -33,6 +35,7 @@ import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
+import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
 import com.example.skd.myapp.activitys.TestBuJuActivity;
@@ -175,6 +178,9 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("ListView"));
         list.add(new SampleBean("Activity切换动画"));
         list.add(new SampleBean("OKhttp"));
+        list.add(new SampleBean("DialogFragment"));
+        list.add(new SampleBean("aige自定义ViewDemo"));
+        list.add(new SampleBean("阴影工具类"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -355,6 +361,21 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "OKhttp":
                             startActivity(new Intent(MainActivity.this, OkHttpActivity.class));
+
+
+                            break;
+                        case "DialogFragment":
+                            startActivity(new Intent(MainActivity.this, DialogFragActivity.class));
+
+
+                            break;
+                        case "aige自定义ViewDemo":
+                            startActivity(new Intent(MainActivity.this, AiGeCustomViewActivity.class));
+
+
+                            break;
+                        case "阴影工具类":
+                            startActivity(new Intent(MainActivity.this, ShadowViewActivity.class));
 
 
                             break;
