@@ -1242,8 +1242,8 @@
                     "startLine": 72,
                     "startColumn": 4,
                     "startOffset": 4523,
-                    "endColumn": 58,
-                    "endOffset": 4577
+                    "endColumn": 47,
+                    "endOffset": 4566
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
@@ -1251,8 +1251,8 @@
                         "startLine": 69,
                         "startColumn": 4,
                         "startOffset": 3861,
-                        "endColumn": 58,
-                        "endOffset": 3915
+                        "endColumn": 47,
+                        "endOffset": 3904
                     }
                 }
             },
@@ -1260,18 +1260,18 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 4582,
+                    "startOffset": 4571,
                     "endColumn": 55,
-                    "endOffset": 4633
+                    "endOffset": 4622
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
-                        "startOffset": 3920,
+                        "startOffset": 3909,
                         "endColumn": 55,
-                        "endOffset": 3971
+                        "endOffset": 3960
                     }
                 }
             },
@@ -1279,9 +1279,9 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 4638,
+                    "startOffset": 4627,
                     "endColumn": 54,
-                    "endOffset": 4688
+                    "endOffset": 4677
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1298,9 +1298,9 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 4693,
+                    "startOffset": 4682,
                     "endColumn": 45,
-                    "endOffset": 4734
+                    "endOffset": 4723
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1317,9 +1317,9 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 4739,
+                    "startOffset": 4728,
                     "endColumn": 57,
-                    "endOffset": 4792
+                    "endOffset": 4781
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1336,9 +1336,9 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 4797,
+                    "startOffset": 4786,
                     "endColumn": 43,
-                    "endOffset": 4836
+                    "endOffset": 4825
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1355,9 +1355,9 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 4841,
+                    "startOffset": 4830,
                     "endColumn": 47,
-                    "endOffset": 4884
+                    "endOffset": 4873
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1374,9 +1374,9 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 4889,
+                    "startOffset": 4878,
                     "endColumn": 46,
-                    "endOffset": 4931
+                    "endOffset": 4920
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1393,9 +1393,9 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 4936,
+                    "startOffset": 4925,
                     "endColumn": 52,
-                    "endOffset": 4984
+                    "endOffset": 4973
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1412,9 +1412,9 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 4989,
+                    "startOffset": 4978,
                     "endColumn": 60,
-                    "endOffset": 5045
+                    "endOffset": 5034
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1431,9 +1431,9 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 5050,
+                    "startOffset": 5039,
                     "endColumn": 51,
-                    "endOffset": 5097
+                    "endOffset": 5086
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1450,9 +1450,9 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 5102,
+                    "startOffset": 5091,
                     "endColumn": 49,
-                    "endOffset": 5147
+                    "endOffset": 5136
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1469,9 +1469,9 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 5152,
+                    "startOffset": 5141,
                     "endColumn": 51,
-                    "endOffset": 5199
+                    "endOffset": 5188
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1488,9 +1488,9 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 5204,
+                    "startOffset": 5193,
                     "endColumn": 54,
-                    "endOffset": 5254
+                    "endOffset": 5243
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1507,9 +1507,9 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 5259,
+                    "startOffset": 5248,
                     "endColumn": 50,
-                    "endOffset": 5305
+                    "endOffset": 5294
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1526,9 +1526,9 @@
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 5310,
+                    "startOffset": 5299,
                     "endColumn": 50,
-                    "endOffset": 5356
+                    "endOffset": 5345
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1545,9 +1545,9 @@
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 5361,
+                    "startOffset": 5350,
                     "endColumn": 63,
-                    "endOffset": 5420
+                    "endOffset": 5409
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1564,9 +1564,9 @@
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 5425,
+                    "startOffset": 5414,
                     "endColumn": 56,
-                    "endOffset": 5477
+                    "endOffset": 5466
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1583,9 +1583,9 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 5482,
+                    "startOffset": 5471,
                     "endColumn": 65,
-                    "endOffset": 5543
+                    "endOffset": 5532
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1602,9 +1602,9 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 5548,
+                    "startOffset": 5537,
                     "endColumn": 64,
-                    "endOffset": 5608
+                    "endOffset": 5597
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1621,9 +1621,9 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 5613,
+                    "startOffset": 5602,
                     "endColumn": 68,
-                    "endOffset": 5677
+                    "endOffset": 5666
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1640,9 +1640,9 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 5682,
+                    "startOffset": 5671,
                     "endColumn": 62,
-                    "endOffset": 5740
+                    "endOffset": 5729
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1659,9 +1659,9 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 5745,
+                    "startOffset": 5734,
                     "endColumn": 45,
-                    "endOffset": 5786
+                    "endOffset": 5775
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1678,9 +1678,9 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 5791,
+                    "startOffset": 5780,
                     "endColumn": 46,
-                    "endOffset": 5833
+                    "endOffset": 5822
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1697,9 +1697,9 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 5838,
+                    "startOffset": 5827,
                     "endColumn": 50,
-                    "endOffset": 5884
+                    "endOffset": 5873
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/strings.xml",
@@ -1716,20 +1716,20 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 5889,
+                    "startOffset": 5878,
                     "endLine": 103,
                     "endColumn": 12,
-                    "endOffset": 6175
+                    "endOffset": 6164
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
                     "position": {
                         "startLine": 71,
                         "startColumn": 4,
-                        "startOffset": 3976,
+                        "startOffset": 3965,
                         "endLine": 77,
                         "endColumn": 12,
-                        "endOffset": 4262
+                        "endOffset": 4251
                     }
                 }
             },
@@ -1737,10 +1737,10 @@
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 6180,
+                    "startOffset": 6169,
                     "endLine": 106,
                     "endColumn": 12,
-                    "endOffset": 6264
+                    "endOffset": 6253
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/styles.xml",
@@ -1758,20 +1758,20 @@
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 6269,
+                    "startOffset": 6258,
                     "endLine": 110,
                     "endColumn": 9,
-                    "endOffset": 6508
+                    "endOffset": 6497
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
-                        "startOffset": 4427,
+                        "startOffset": 4416,
                         "endLine": 84,
                         "endColumn": 9,
-                        "endOffset": 4666
+                        "endOffset": 4655
                     }
                 }
             },
@@ -1779,20 +1779,20 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 6513,
+                    "startOffset": 6502,
                     "endLine": 120,
                     "endColumn": 12,
-                    "endOffset": 7094
+                    "endOffset": 7083
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
                     "position": {
                         "startLine": 85,
                         "startColumn": 4,
-                        "startOffset": 4671,
+                        "startOffset": 4660,
                         "endLine": 94,
                         "endColumn": 12,
-                        "endOffset": 5252
+                        "endOffset": 5241
                     }
                 }
             },
@@ -1800,20 +1800,20 @@
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 7099,
+                    "startOffset": 7088,
                     "endLine": 129,
                     "endColumn": 13,
-                    "endOffset": 7715
+                    "endOffset": 7704
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
                     "position": {
                         "startLine": 95,
                         "startColumn": 4,
-                        "startOffset": 5257,
+                        "startOffset": 5246,
                         "endLine": 103,
                         "endColumn": 13,
-                        "endOffset": 5873
+                        "endOffset": 5862
                     }
                 }
             },
@@ -1821,20 +1821,20 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 7720,
+                    "startOffset": 7709,
                     "endLine": 138,
                     "endColumn": 13,
-                    "endOffset": 8339
+                    "endOffset": 8328
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/values/values.xml",
                     "position": {
                         "startLine": 104,
                         "startColumn": 4,
-                        "startOffset": 5878,
+                        "startOffset": 5867,
                         "endLine": 112,
                         "endColumn": 13,
-                        "endOffset": 6497
+                        "endOffset": 6486
                     }
                 }
             },
@@ -1842,10 +1842,10 @@
                 "to": {
                     "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 8344,
+                    "startOffset": 8333,
                     "endLine": 143,
                     "endColumn": 12,
-                    "endOffset": 8595
+                    "endOffset": 8584
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/styles.xml",
@@ -1863,10 +1863,10 @@
                 "to": {
                     "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 8600,
+                    "startOffset": 8589,
                     "endLine": 147,
                     "endColumn": 12,
-                    "endOffset": 8814
+                    "endOffset": 8803
                 },
                 "from": {
                     "file": "/Users/skd/MyAPP/lib/pingpp_one/res/values/styles.xml",

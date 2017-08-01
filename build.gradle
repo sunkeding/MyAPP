@@ -2,6 +2,7 @@
 
 buildscript {
     repositories {
+        mavenLocal()
         jcenter()
     }
     dependencies {
@@ -11,12 +12,16 @@ buildscript {
         // in the individual module build.gradle files
         //ARouter
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+
+        //瓦力打包
+        classpath 'com.meituan.android.walle:plugin:1.1.4'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
+        mavenLocal()
     }
 }
 

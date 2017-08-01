@@ -1,6 +1,22 @@
 apply plugin: 'com.android.application'
+apply plugin: 'walle'
+
 
 android {
+    signingConfigs {
+        release {
+            keyAlias 'skd'
+            keyPassword '123456'
+            storeFile file('src/main/assets/skdapp.jks')
+            storePassword '123456'
+        }
+        debug {
+            keyAlias 'skd'
+            keyPassword '123456'
+            storeFile file('src/main/assets/skdapp.jks')
+            storePassword '123456'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
@@ -12,43 +28,51 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+        disable 'MissingTranslation'
     }
     productFlavors {
-        fir_test {} //fir测试
-        fir_release {} //fir正式
-        yingyonghui {}//应用汇
-        jifeng {}//机锋
-        wandoujia {}//豌豆荚
-        nduowang {}//N多网
-        mumayi {}//木蚂蚁
-        oppo {}//oppo
-        baidu {}//baidu
-        huawei {}//huawei
-        xiaomi {}//小米
-        lenovo {}//联想
-        yiyonghui {}//易用汇
-        meizu {}//魅族
-        maopo {}//冒泡
-//        _360 {}//360
-        sougo {}//搜狗
-        yingyongbao {}//应用宝
-        suning {}//苏宁
-        yidong {}//移动应用市场
-        liantong {}//联通商店
-        //youmeng {}//友盟更新
-        //CAT {}
-        //ZFB {}//支付宝
-//        SH {} //上海
-        //google {} //谷歌
+        yingyongbao { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"] }
+//        // 腾讯开放平台（应用宝）
+        c360 { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "c360"] }
+        // 360开放平台(360手机助手)
+        baidu { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"] }
+        //百度开放平台(百度手机助手、91、安卓市场)
+        wandoujia { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"] }
+        xiaomi { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"] }                 // 小米开放平台
+        meizu { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"] }                   // 魅族
+        huawei { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"] }               // 华为
+
+//        chuizi { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "chuizi"] }     //锤子
+//        sanxing { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sanxing"] }     //三星
+        leoao { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "leoao"] }     //乐刻
+
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
     }
 }
 repositories {
@@ -76,9 +100,21 @@ dependencies {
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
     compile project(':lib:pingpp')
     compile project(':lib:pingpp_one')
-    compile 'com.squareup.picasso:picasso:2.5.2'// 替换成最新版本, 需要注意的是api
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // 替换成最新版本, 需要注意的是api
     // 要与compiler匹配使用，均使用最新版可以保证兼容
-//    compile 'com.alibaba:arouter-api:1.2.1.1'
-//    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1' //todo 这句话写着编译死活通不过，导致Arouter无法正常使用，Error:Failed to resolve: annotationProcessor
+    //    compile 'com.alibaba:arouter-api:1.2.1.1'
+    //    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1' //todo 这句话写着编译死活通不过，导致Arouter无法正常使用，Error:Failed to resolve: annotationProcessor
+    compile 'com.meituan.android.walle:library:1.1.4'
+    //瓦力打包
 
+    compile 'com.orhanobut:hawk:2.0.1'//Secure, simple key-value storage for Android
+}
+
+walle {
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels")
+    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}-${flavorName}.apk'
+    //configFile与channelFile两者必须存在一个，否则无法生成渠道包。两者都存在时优先执行configFile
+//    channelFile = new File("${project.getProjectDir()}/channel")
+    //configFile = new File("${project.getProjectDir()}/config.json")
 }

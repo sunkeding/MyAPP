@@ -126,6 +126,9 @@
         <activity android:name=".activitys.DialogFragActivity" />
         <activity android:name=".activitys.AiGeCustomViewActivity" />
         <activity android:name=".activitys.ShadowViewActivity" />
+        <activity android:name=".activitys.WaterMarkActivity" />
+        <activity android:name=".activitys.ScreenShotActivity" />
+        <activity android:name=".activitys.TestFromSDCard" />
     </application>
 
 </manifest>

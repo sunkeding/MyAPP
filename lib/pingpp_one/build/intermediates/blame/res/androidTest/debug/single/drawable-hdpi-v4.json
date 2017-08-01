@@ -60,11 +60,11 @@
         "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_btn_normal.9.png"
     },
     {
-        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/cmbkb_logo.png",
-        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_logo.png"
-    },
-    {
         "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/cmbkb_bg.9.png",
         "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_bg.9.png"
+    },
+    {
+        "merged": "/Users/skd/MyAPP/lib/pingpp_one/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/cmbkb_logo.png",
+        "source": "/Users/skd/MyAPP/lib/pingpp/build/intermediates/bundles/default/res/drawable-hdpi-v4/cmbkb_logo.png"
     }
 ]

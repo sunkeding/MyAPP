@@ -35,6 +35,7 @@ import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
+import com.example.skd.myapp.activitys.ScreenShotActivity;
 import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
@@ -44,6 +45,7 @@ import com.example.skd.myapp.activitys.TimeActivity;
 import com.example.skd.myapp.activitys.ViewHelperActivity;
 import com.example.skd.myapp.activitys.ViewPagerActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
+import com.example.skd.myapp.activitys.WaterMarkActivity;
 import com.example.skd.myapp.activitys.WebActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
@@ -181,6 +183,8 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("DialogFragment"));
         list.add(new SampleBean("aige自定义ViewDemo"));
         list.add(new SampleBean("阴影工具类"));
+        list.add(new SampleBean("图片加水印"));
+        list.add(new SampleBean("截图"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -378,6 +382,12 @@ public class MainActivity extends BaseActivity {
                             startActivity(new Intent(MainActivity.this, ShadowViewActivity.class));
 
 
+                            break;
+                        case "图片加水印":
+                            startActivity(new Intent(MainActivity.this,WaterMarkActivity.class));
+                            break;
+                        case "截图":
+                            startActivity(new Intent(MainActivity.this, ScreenShotActivity.class));
                             break;
                     }
                 }
