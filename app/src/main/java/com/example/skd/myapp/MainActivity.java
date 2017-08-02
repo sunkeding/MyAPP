@@ -26,6 +26,7 @@ import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.InvokeActivity;
 import com.example.skd.myapp.activitys.LikeDialogActivity;
 import com.example.skd.myapp.activitys.ListActivity;
+import com.example.skd.myapp.activitys.ListViewDemo;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
@@ -35,6 +36,7 @@ import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
+import com.example.skd.myapp.activitys.RectActivity;
 import com.example.skd.myapp.activitys.ScreenShotActivity;
 import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
@@ -185,6 +187,9 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("阴影工具类"));
         list.add(new SampleBean("图片加水印"));
         list.add(new SampleBean("截图"));
+        list.add(new SampleBean("DrawText"));
+        list.add(new SampleBean("RectCustomView"));
+        list.add(new SampleBean("ListView加属性多选模式"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -388,6 +393,15 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "截图":
                             startActivity(new Intent(MainActivity.this, ScreenShotActivity.class));
+                            break;
+                        case "DrawText":
+                            startActivity(new Intent(MainActivity.this, DrawTextActivity.class));
+                            break;
+                        case "RectCustomView":
+                            startActivity(new Intent(MainActivity.this,RectActivity.class));
+                            break;
+                        case "ListView加属性多选模式":
+                            startActivity(new Intent(MainActivity.this,ListViewDemo.class));
                             break;
                     }
                 }

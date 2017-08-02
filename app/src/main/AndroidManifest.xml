@@ -129,6 +129,9 @@
         <activity android:name=".activitys.WaterMarkActivity" />
         <activity android:name=".activitys.ScreenShotActivity" />
         <activity android:name=".activitys.TestFromSDCard" />
+        <activity android:name=".DrawTextActivity" />
+        <activity android:name=".activitys.RectActivity" />
+        <activity android:name=".activitys.ListViewDemo" />
     </application>
 
 </manifest>

@@ -3,16 +3,15 @@ package com.example.skd.myapp.activitys;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.renderscript.RSRuntimeException;
 import android.support.annotation.Nullable;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.skd.myapp.R;
-import com.example.skd.myapp.bean.SampleBean;
 import com.example.skd.myapp.utils.FastBlur;
 import com.example.skd.myapp.utils.RSBlur;
 import com.orhanobut.hawk.Hawk;
@@ -38,6 +37,7 @@ public class TestFromSDCard extends Activity {
         String url = Hawk.get("url");
 
         bitmap = decodeFile(new File(url));
+
         new BlurTask().execute();
         //bitmap都可以存，厉害了
 //        Bitmap bitmap2 = Hawk.get("bitmap");
@@ -83,12 +83,12 @@ public class TestFromSDCard extends Activity {
                 try {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
                         try {
-                            bitmap1 = RSBlur.blur(TestFromSDCard.this, bitmap, 10);
+                            bitmap1 = RSBlur.blur(TestFromSDCard.this, bitmap, 25);
                         } catch (RSRuntimeException e) {
-                            bitmap1 = FastBlur.doBlur(bitmap, 10, false);
+                            bitmap1 = FastBlur.doBlur(bitmap, 25, false);
                         }
                     } else {
-                        bitmap1 = FastBlur.doBlur(bitmap, 10, false);
+                        bitmap1 = FastBlur.doBlur(bitmap, 25, false);
                     }
                     return bitmap1;
                 } catch (Exception e) {
@@ -104,7 +104,9 @@ public class TestFromSDCard extends Activity {
             super.onPostExecute(bitmap);
 
             if (bitmap != null) {
-                iv.setImageBitmap(bitmap);
+//                iv.setImageBitmap(bitmap);
+                BitmapDrawable bitmapDrawable = new BitmapDrawable(bitmap);
+                getWindow().setBackgroundDrawable(bitmapDrawable);
             }
         }
     }
