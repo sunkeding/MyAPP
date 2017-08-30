@@ -66,33 +66,33 @@
         <activity android:name=".activitys.ViewStubAndMergeActivity" />
         <activity android:name=".activitys.ViewStubActivity" />
         <activity android:name=".activitys.MergeActivity" />
-        <activity android:name=".activitys.PingActivity" />
+        <!--<activity android:name=".activitys.PingActivity" />-->
 
 
-        <!-- Ping++ SDK -->
-        <activity
-            android:name="com.pingplusplus.android.PaymentActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--&lt;!&ndash; Ping++ SDK &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.pingplusplus.android.PaymentActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+            <!--android:launchMode="singleTop"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
 
-        <!-- 微信支付 -->
-        <activity-alias
-            android:name=".wxapi.WXPayEntryActivity"
-            android:exported="true"
-            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+        <!--&lt;!&ndash; 微信支付 &ndash;&gt;-->
+        <!--<activity-alias-->
+            <!--android:name=".wxapi.WXPayEntryActivity"-->
+            <!--android:exported="true"-->
+            <!--android:targetActivity="com.pingplusplus.android.PaymentActivity" />-->
 
-        <!-- 支付宝 -->
-        <activity
-            android:name="com.alipay.sdk.app.H5PayActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
-            android:exported="false"
-            android:screenOrientation="behind"></activity>
-        <activity
-            android:name="com.alipay.sdk.auth.AuthActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
-            android:exported="false"
-            android:screenOrientation="behind"></activity>
+        <!--&lt;!&ndash; 支付宝 &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.alipay.sdk.app.H5PayActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+            <!--android:exported="false"-->
+            <!--android:screenOrientation="behind"></activity>-->
+        <!--<activity-->
+            <!--android:name="com.alipay.sdk.auth.AuthActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+            <!--android:exported="false"-->
+            <!--android:screenOrientation="behind"></activity>-->
         <activity android:name=".activitys.CountDownActivity" />
         <activity android:name=".activitys.Test1Activity" />
         <activity android:name=".activitys.Test2Activity" />

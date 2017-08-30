@@ -36,7 +36,6 @@ import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.OkHttpActivity;
 import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.PicassoActivity;
-import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.RectActivity;
 import com.example.skd.myapp.activitys.ScreenShotActivity;
@@ -252,11 +251,11 @@ public class MainActivity extends BaseActivity {
 
 
                             break;
-                        case "Ping++支付":
-                            startActivity(new Intent(MainActivity.this, PingActivity.class));
+//                        case "Ping++支付":
+//                            startActivity(new Intent(MainActivity.this, PingActivity.class));
 
 
-                            break;
+//                            break;
                         case "分秒倒计时":
                             startActivity(new Intent(MainActivity.this, CountDownActivity.class));
 

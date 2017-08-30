@@ -98,8 +98,6 @@ dependencies {
     compile 'com.android.support:cardview-v7:25.2.0'
     compile 'com.taobao.android:alisdk-hotfix:2.0.0'
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
-    compile project(':lib:pingpp')
-    compile project(':lib:pingpp_one')
     compile 'com.squareup.picasso:picasso:2.5.2'
     // 替换成最新版本, 需要注意的是api
     // 要与compiler匹配使用，均使用最新版可以保证兼容
@@ -107,8 +105,8 @@ dependencies {
     //    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1' //todo 这句话写着编译死活通不过，导致Arouter无法正常使用，Error:Failed to resolve: annotationProcessor
     compile 'com.meituan.android.walle:library:1.1.4'
     //瓦力打包
-
-    compile 'com.orhanobut:hawk:2.0.1'//Secure, simple key-value storage for Android
+    compile 'com.orhanobut:hawk:2.0.1'
+    //Secure, simple key-value storage for Android
     //大图
     compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
 }
