@@ -132,6 +132,9 @@
         <activity android:name=".DrawTextActivity" />
         <activity android:name=".activitys.RectActivity" />
         <activity android:name=".activitys.ListViewDemo" />
+        <activity android:name=".activitys.NewShadowActivity" />
+        <activity android:name=".activitys.ShadowHelperActivity" />
+        <activity android:name=".activitys.EnumActivity" />
     </application>
 
 </manifest>

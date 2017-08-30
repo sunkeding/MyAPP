@@ -109,6 +109,8 @@ dependencies {
     //瓦力打包
 
     compile 'com.orhanobut:hawk:2.0.1'//Secure, simple key-value storage for Android
+    //大图
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
 }
 
 walle {

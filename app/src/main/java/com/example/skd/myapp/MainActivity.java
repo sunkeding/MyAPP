@@ -19,6 +19,7 @@ import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.BlurTwoActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.DialogFragActivity;
+import com.example.skd.myapp.activitys.EnumActivity;
 import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.FlowLayoutActivity;
 import com.example.skd.myapp.activitys.H5ToNativeActivity;
@@ -30,6 +31,7 @@ import com.example.skd.myapp.activitys.ListViewDemo;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
+import com.example.skd.myapp.activitys.NewShadowActivity;
 import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.OkHttpActivity;
 import com.example.skd.myapp.activitys.PaintActivity;
@@ -38,6 +40,7 @@ import com.example.skd.myapp.activitys.PingActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.RectActivity;
 import com.example.skd.myapp.activitys.ScreenShotActivity;
+import com.example.skd.myapp.activitys.ShadowHelperActivity;
 import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
@@ -190,6 +193,9 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("DrawText"));
         list.add(new SampleBean("RectCustomView"));
         list.add(new SampleBean("ListView加属性多选模式"));
+        list.add(new SampleBean("new shadow"));
+        list.add(new SampleBean("ShadowHelperActivity"));
+        list.add(new SampleBean("枚举"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -389,7 +395,7 @@ public class MainActivity extends BaseActivity {
 
                             break;
                         case "图片加水印":
-                            startActivity(new Intent(MainActivity.this,WaterMarkActivity.class));
+                            startActivity(new Intent(MainActivity.this, WaterMarkActivity.class));
                             break;
                         case "截图":
                             startActivity(new Intent(MainActivity.this, ScreenShotActivity.class));
@@ -398,10 +404,19 @@ public class MainActivity extends BaseActivity {
                             startActivity(new Intent(MainActivity.this, DrawTextActivity.class));
                             break;
                         case "RectCustomView":
-                            startActivity(new Intent(MainActivity.this,RectActivity.class));
+                            startActivity(new Intent(MainActivity.this, RectActivity.class));
                             break;
                         case "ListView加属性多选模式":
-                            startActivity(new Intent(MainActivity.this,ListViewDemo.class));
+                            startActivity(new Intent(MainActivity.this, ListViewDemo.class));
+                            break;
+                        case "new shadow":
+                            startActivity(new Intent(MainActivity.this, NewShadowActivity.class));
+                            break;
+                        case "ShadowHelperActivity":
+                            startActivity(new Intent(MainActivity.this, ShadowHelperActivity.class));
+                            break;
+                        case "枚举":
+                            startActivity(new Intent(MainActivity.this, EnumActivity.class));
                             break;
                     }
                 }
