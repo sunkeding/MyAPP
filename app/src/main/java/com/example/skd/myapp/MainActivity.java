@@ -53,6 +53,7 @@ import com.example.skd.myapp.activitys.WaterMarkActivity;
 import com.example.skd.myapp.activitys.WebActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
+import com.example.skd.myapp.salvage.SalvageActivity;
 import com.example.skd.myapp.views.RecycleViewDivier;
 import com.taobao.android.SophixManager;
 import com.taobao.android.listener.PatchLoadStatusListener;
@@ -196,6 +197,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("ShadowHelperActivity"));
         list.add(new SampleBean("枚举"));
         list.add(new SampleBean("ViewFlipper+CountDownTimer"));
+        list.add(new SampleBean("Salvage"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -420,6 +422,9 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "ViewFlipper+CountDownTimer":
                             startActivity(new Intent(MainActivity.this,ViewFlipperActivity.class));
+                            break;
+                        case "Salvage":
+                            startActivity(new Intent(MainActivity.this, SalvageActivity.class));
                             break;
                         default:
                             break;
