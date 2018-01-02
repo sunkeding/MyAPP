@@ -195,6 +195,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("new shadow"));
         list.add(new SampleBean("ShadowHelperActivity"));
         list.add(new SampleBean("枚举"));
+        list.add(new SampleBean("ViewFlipper+CountDownTimer"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -416,6 +417,11 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "枚举":
                             startActivity(new Intent(MainActivity.this, EnumActivity.class));
+                            break;
+                        case "ViewFlipper+CountDownTimer":
+                            startActivity(new Intent(MainActivity.this,ViewFlipperActivity.class));
+                            break;
+                        default:
                             break;
                     }
                 }

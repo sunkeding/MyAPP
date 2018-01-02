@@ -5,16 +5,16 @@ apply plugin: 'walle'
 android {
     signingConfigs {
         release {
-            keyAlias 'skd'
+            keyAlias 'key0'
             keyPassword '123456'
             storeFile file('src/main/assets/skdapp.jks')
-            storePassword '123456'
+            storePassword '111111'
         }
         debug {
-            keyAlias 'skd'
-            keyPassword '123456'
+            keyAlias 'key0'
+            keyPassword '111111'
             storeFile file('src/main/assets/skdapp.jks')
-            storePassword '123456'
+            storePassword '111111'
         }
     }
     compileSdkVersion 25
