@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.bumptech.glide.Glide;
@@ -57,8 +58,11 @@ public class ViewFlipperActivity extends Activity {
             @Override
             public void run() {
                 Log.d("ViewFlipperActivity", "4->Looper.myLooper():" + Looper.myLooper());
-
+                Toast.makeText(ViewFlipperActivity.this, "isOnMainThread():" + isOnMainThread(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    public static boolean isOnMainThread() {
+        return Looper.myLooper() == Looper.getMainLooper();
     }
 }
