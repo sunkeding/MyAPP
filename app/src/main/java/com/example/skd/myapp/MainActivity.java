@@ -1,8 +1,11 @@
 package com.example.skd.myapp;
 
 import android.Manifest;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.SystemClock;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -17,6 +20,7 @@ import com.example.skd.myapp.activitys.AiGeCustomViewActivity;
 import com.example.skd.myapp.activitys.AnimActivity;
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.BlurTwoActivity;
+import com.example.skd.myapp.activitys.CoordinatorLayoutActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.DialogFragActivity;
 import com.example.skd.myapp.activitys.EnumActivity;
@@ -25,9 +29,11 @@ import com.example.skd.myapp.activitys.FlowLayoutActivity;
 import com.example.skd.myapp.activitys.H5ToNativeActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.InvokeActivity;
+import com.example.skd.myapp.activitys.LevelViewActivity;
 import com.example.skd.myapp.activitys.LikeDialogActivity;
 import com.example.skd.myapp.activitys.ListActivity;
 import com.example.skd.myapp.activitys.ListViewDemo;
+import com.example.skd.myapp.activitys.LocalPushActivity;
 import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
@@ -53,6 +59,7 @@ import com.example.skd.myapp.activitys.WaterMarkActivity;
 import com.example.skd.myapp.activitys.WebActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
+import com.example.skd.myapp.receiver.AutoReceiver;
 import com.example.skd.myapp.salvage.SalvageActivity;
 import com.example.skd.myapp.views.RecycleViewDivier;
 import com.taobao.android.SophixManager;
@@ -83,7 +90,15 @@ public class MainActivity extends BaseActivity {
     public void setMyContentView() {
         setContentView(R.layout.activity_main);
         initHotfix();
+        testPush();
 
+    }
+
+    private void testPush() {
+        //发送广播
+        Intent intent = new Intent(this, AutoReceiver.class);
+        intent.setAction("VIDEO_TIMER");
+        sendBroadcast(intent);
     }
 
 
@@ -160,7 +175,6 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("HandlerThread"));
         list.add(new SampleBean("Rxpermissions"));
         list.add(new SampleBean("ViewStub And Merge"));
-        list.add(new SampleBean("Ping++支付"));
         list.add(new SampleBean("分秒倒计时"));
         list.add(new SampleBean("返回首页功能"));
         list.add(new SampleBean("FilterView"));
@@ -198,6 +212,9 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("枚举"));
         list.add(new SampleBean("ViewFlipper+CountDownTimer"));
         list.add(new SampleBean("Salvage"));
+        list.add(new SampleBean("CoordinatorLayout"));
+        list.add(new SampleBean("LevelView"));
+        list.add(new SampleBean("本地推送"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -210,7 +227,9 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        Toast.makeText(mContext, "MainActivity_onNewIntent", Toast.LENGTH_SHORT).show();
+        Toast.makeText(mContext, "MainActivity_onNewIntent,这里可以做一些跳转到具体页面的操作", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MainActivity.this,LevelViewActivity.class));
+
     }
 
     class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -425,6 +444,15 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "Salvage":
                             startActivity(new Intent(MainActivity.this, SalvageActivity.class));
+                            break;
+                        case "CoordinatorLayout":
+                            startActivity(new Intent(MainActivity.this, CoordinatorLayoutActivity.class));
+                            break;
+                        case "LevelView":
+                            startActivity(new Intent(MainActivity.this, LevelViewActivity.class));
+                            break;
+                        case "本地推送":
+                            startActivity(new Intent(MainActivity.this, LocalPushActivity.class));
                             break;
                         default:
                             break;

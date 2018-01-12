@@ -26,7 +26,7 @@ public class ViewFlipperActivity extends Activity {
         ImageView iv = (ImageView) findViewById(R.id.iv);
         TextView tv = (TextView) findViewById(R.id.tv);
         final ViewFlipper vf = (ViewFlipper) findViewById(R.id.vf);
-        Glide.with(this).load("https://img.leoao.com/2017/12/25/Fson-_gBATBXEAXRM57dWtDoxNxA.jpg").into(iv);
+        Glide.with(this).load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515143545620&di=0fc31d38361d9dca418554886386d822&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F02675d593a49cca8012193a3d789f3.gif").into(iv);
         CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {

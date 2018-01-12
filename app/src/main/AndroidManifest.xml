@@ -66,6 +66,17 @@
         <activity android:name=".activitys.ViewStubAndMergeActivity" />
         <activity android:name=".activitys.ViewStubActivity" />
         <activity android:name=".activitys.MergeActivity" />
+        <receiver
+            android:name=".receiver.AutoReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+
         <!--<activity android:name=".activitys.PingActivity" />-->
 
 
@@ -137,6 +148,9 @@
         <activity android:name=".activitys.EnumActivity" />
         <activity android:name=".ViewFlipperActivity" />
         <activity android:name=".salvage.SalvageActivity" />
+        <activity android:name=".activitys.CoordinatorLayoutActivity" />
+        <activity android:name=".activitys.LevelViewActivity" />
+        <activity android:name=".activitys.LocalPushActivity" />
     </application>
 
 </manifest>

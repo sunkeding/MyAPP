@@ -13,10 +13,10 @@
 
         <ImageView
             android:id="@+id/iv"
-            android:layout_width="60dp"
+            android:layout_width="33dp"
 
-            android:layout_height="60dp"
-            android:background="@drawable/circle_img_bg" />
+            android:layout_height="33dp"
+            />
 
         <TextView
             android:id="@+id/tv"

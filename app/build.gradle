@@ -109,6 +109,7 @@ dependencies {
     //Secure, simple key-value storage for Android
     //大图
     compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
+    compile 'com.android.support:design:25.2.0'
 }
 
 walle {
