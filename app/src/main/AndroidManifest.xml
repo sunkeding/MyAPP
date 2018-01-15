@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.NFC" />
-
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <!-- 百度支付额外需要的权限 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -68,6 +68,15 @@
         <activity android:name=".activitys.MergeActivity" />
         <receiver
             android:name=".receiver.AutoReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.AlarmReceiver" android:process=":remote"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -151,6 +160,10 @@
         <activity android:name=".activitys.CoordinatorLayoutActivity" />
         <activity android:name=".activitys.LevelViewActivity" />
         <activity android:name=".activitys.LocalPushActivity" />
+        <activity android:name=".activitys.AlarmActivity" />
+        <activity android:name=".activitys.TranslateDialogActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".activitys.AddViewActivity" />
     </application>
 
 </manifest>

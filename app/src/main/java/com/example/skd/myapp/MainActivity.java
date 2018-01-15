@@ -1,11 +1,10 @@
 package com.example.skd.myapp;
 
 import android.Manifest;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.SystemClock;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -16,7 +15,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.skd.myapp.activitys.AddViewActivity;
 import com.example.skd.myapp.activitys.AiGeCustomViewActivity;
+import com.example.skd.myapp.activitys.AlarmActivity;
 import com.example.skd.myapp.activitys.AnimActivity;
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.BlurTwoActivity;
@@ -91,7 +92,19 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         initHotfix();
         testPush();
+        showTipDialog();
+        startActivity(new Intent(MainActivity.this,AddViewActivity.class));
 
+    }
+
+    private void showTipDialog() {
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+//                startActivity(new Intent(MainActivity.this, TranslateDialogActivity.class));
+
+            }
+        },2*1000);
     }
 
     private void testPush() {
@@ -215,6 +228,8 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("CoordinatorLayout"));
         list.add(new SampleBean("LevelView"));
         list.add(new SampleBean("本地推送"));
+        list.add(new SampleBean("闹钟"));
+        list.add(new SampleBean("AddView"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -453,6 +468,12 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "本地推送":
                             startActivity(new Intent(MainActivity.this, LocalPushActivity.class));
+                            break;
+                        case "闹钟":
+                            startActivity(new Intent(MainActivity.this, AlarmActivity.class));
+                            break;
+                        case "AddView":
+                            startActivity(new Intent(MainActivity.this, AddViewActivity.class));
                             break;
                         default:
                             break;
