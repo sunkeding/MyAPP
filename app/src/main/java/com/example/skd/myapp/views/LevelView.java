@@ -52,7 +52,7 @@ public class LevelView extends View {
         paint2.setStrokeWidth(2);
         paint2.setColor(Color.parseColor("#00FFFF"));
         paint2.setStyle(Paint.Style.FILL);
-        canvas.drawRoundRect(0,0,dp2px(mwidth),dp2px(mheight),dp2px(6),dp2px(6), paint1);
+//        canvas.drawRoundRect(0,0,dp2px(mwidth),dp2px(mheight),dp2px(6),dp2px(6), paint1);
         Path path = new Path();
         path.lineTo(dp2px(mwidth*2), dp2px(0));
         path.lineTo(dp2px(mwidth*2 + 50), dp2px(dp2px(mheight)));

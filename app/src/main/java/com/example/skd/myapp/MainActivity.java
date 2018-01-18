@@ -93,7 +93,7 @@ public class MainActivity extends BaseActivity {
         initHotfix();
         testPush();
         showTipDialog();
-        startActivity(new Intent(MainActivity.this,AddViewActivity.class));
+        startActivity(new Intent(MainActivity.this,LevelViewActivity.class));
 
     }
 

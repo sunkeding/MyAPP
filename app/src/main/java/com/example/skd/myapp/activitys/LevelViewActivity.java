@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.skd.myapp.R;
+import com.example.skd.myapp.views.CircleProgressBar;
 
 /**
  * Created by skd on 2018/1/11.
@@ -17,11 +18,15 @@ public class LevelViewActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_view);
-        findViewById(R.id.levelview).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(LevelViewActivity.this, "red", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        findViewById(R.id.levelview).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(LevelViewActivity.this, "red", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+//        CircleProgressBar circleProgressBar= (CircleProgressBar)findViewById(R.id.recommend_progressBar);
+//
+//        circleProgressBar.setTargetPercent(80);
     }
 }
