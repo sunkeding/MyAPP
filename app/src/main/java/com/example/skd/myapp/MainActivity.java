@@ -42,6 +42,7 @@ import com.example.skd.myapp.activitys.OkHttpActivity;
 import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.RectActivity;
+import com.example.skd.myapp.activitys.ResultReceiverActivity;
 import com.example.skd.myapp.activitys.ScreenShotActivity;
 import com.example.skd.myapp.activitys.ShadowHelperActivity;
 import com.example.skd.myapp.activitys.ShadowViewActivity;
@@ -220,6 +221,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("闹钟"));
         list.add(new SampleBean("AddView"));
         list.add(new SampleBean("广播封装"));
+        list.add(new SampleBean("ResultReceiver"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -438,6 +440,9 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "广播封装":
                             startActivity(new Intent(MainActivity.this, BroacdCastDemoActivity.class));
+                            break;
+                        case "ResultReceiver":
+                            startActivity(new Intent(MainActivity.this, ResultReceiverActivity.class));
                             break;
                         default:
                             break;

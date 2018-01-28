@@ -159,6 +159,9 @@
             android:theme="@android:style/Theme.Translucent"/>
         <activity android:name=".activitys.AddViewActivity" />
         <activity android:name=".activitys.BroacdCastDemoActivity" />
+        <activity android:name=".activitys.ResultReceiverActivity" />
+
+        <service android:name=".MyIntentService"></service>
     </application>
 
 </manifest>
