@@ -21,6 +21,7 @@ import com.example.skd.myapp.activitys.AlarmActivity;
 import com.example.skd.myapp.activitys.AnimActivity;
 import com.example.skd.myapp.activitys.BlurActivity;
 import com.example.skd.myapp.activitys.BlurTwoActivity;
+import com.example.skd.myapp.activitys.BroacdCastDemoActivity;
 import com.example.skd.myapp.activitys.CoordinatorLayoutActivity;
 import com.example.skd.myapp.activitys.CountDownActivity;
 import com.example.skd.myapp.activitys.DialogFragActivity;
@@ -29,20 +30,17 @@ import com.example.skd.myapp.activitys.FilterViewActivity;
 import com.example.skd.myapp.activitys.FlowLayoutActivity;
 import com.example.skd.myapp.activitys.H5ToNativeActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
-import com.example.skd.myapp.activitys.InvokeActivity;
 import com.example.skd.myapp.activitys.LevelViewActivity;
 import com.example.skd.myapp.activitys.LikeDialogActivity;
 import com.example.skd.myapp.activitys.ListActivity;
 import com.example.skd.myapp.activitys.ListViewDemo;
 import com.example.skd.myapp.activitys.LocalPushActivity;
-import com.example.skd.myapp.activitys.MenuLayoutActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
 import com.example.skd.myapp.activitys.NetActivity;
 import com.example.skd.myapp.activitys.NewShadowActivity;
 import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.OkHttpActivity;
 import com.example.skd.myapp.activitys.PaintActivity;
-import com.example.skd.myapp.activitys.PicassoActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.RectActivity;
 import com.example.skd.myapp.activitys.ScreenShotActivity;
@@ -50,8 +48,6 @@ import com.example.skd.myapp.activitys.ShadowHelperActivity;
 import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
-import com.example.skd.myapp.activitys.TestBuJuActivity;
-import com.example.skd.myapp.activitys.TestMyActivity;
 import com.example.skd.myapp.activitys.TimeActivity;
 import com.example.skd.myapp.activitys.ViewHelperActivity;
 import com.example.skd.myapp.activitys.ViewPagerActivity;
@@ -93,7 +89,7 @@ public class MainActivity extends BaseActivity {
         initHotfix();
         testPush();
         showTipDialog();
-        startActivity(new Intent(MainActivity.this,LevelViewActivity.class));
+        startActivity(new Intent(MainActivity.this, LevelViewActivity.class));
 
     }
 
@@ -104,7 +100,7 @@ public class MainActivity extends BaseActivity {
 //                startActivity(new Intent(MainActivity.this, TranslateDialogActivity.class));
 
             }
-        },2*1000);
+        }, 2 * 1000);
     }
 
     private void testPush() {
@@ -194,20 +190,15 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("NineOldAndroids动画"));
         list.add(new SampleBean("ViewHelper"));
         list.add(new SampleBean("高斯模糊"));
-        list.add(new SampleBean("MenuLayoutActivity"));
         list.add(new SampleBean("ViewPager"));
-        list.add(new SampleBean("测试布局"));
-        list.add(new SampleBean("picasso加载JPG"));
         list.add(new SampleBean("RecycleView多选效果"));
         list.add(new SampleBean("FlowLayout单选多选效果"));
         list.add(new SampleBean("打开本地html"));
         list.add(new SampleBean("模拟H5跳转本地Activity"));
         list.add(new SampleBean("图片添加水印"));
         list.add(new SampleBean("时间轴布局"));
-        list.add(new SampleBean("Activity调用其他Activity的方法"));
         list.add(new SampleBean("用Activity实现Dialog效果"));
         list.add(new SampleBean("高斯模糊效果2"));
-        list.add(new SampleBean("布局测试"));
         list.add(new SampleBean("自定义View画圆角矩形"));
         list.add(new SampleBean("ListView"));
         list.add(new SampleBean("Activity切换动画"));
@@ -230,6 +221,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("本地推送"));
         list.add(new SampleBean("闹钟"));
         list.add(new SampleBean("AddView"));
+        list.add(new SampleBean("广播封装"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -243,7 +235,7 @@ public class MainActivity extends BaseActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         Toast.makeText(mContext, "MainActivity_onNewIntent,这里可以做一些跳转到具体页面的操作", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(MainActivity.this,LevelViewActivity.class));
+        startActivity(new Intent(MainActivity.this, LevelViewActivity.class));
 
     }
 
@@ -323,26 +315,12 @@ public class MainActivity extends BaseActivity {
 
 
                             break;
-                        case "MenuLayoutActivity":
-                            startActivity(new Intent(MainActivity.this, MenuLayoutActivity.class));
-
-
-                            break;
                         case "ViewPager":
                             startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
 
 
                             break;
-                        case "测试布局":
-                            startActivity(new Intent(MainActivity.this, TestMyActivity.class));
 
-
-                            break;
-                        case "picasso加载JPG":
-                            startActivity(new Intent(MainActivity.this, PicassoActivity.class));
-
-
-                            break;
                         case "RecycleView多选效果":
                             startActivity(new Intent(MainActivity.this, MulpitleSelectedActivity.class));
 
@@ -373,11 +351,6 @@ public class MainActivity extends BaseActivity {
 
 
                             break;
-                        case "Activity调用其他Activity的方法":
-                            startActivity(new Intent(MainActivity.this, InvokeActivity.class));
-
-
-                            break;
                         case "用Activity实现Dialog效果":
                             Intent intent = new Intent(MainActivity.this, LikeDialogActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
@@ -387,11 +360,6 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "高斯模糊效果2":
                             startActivity(new Intent(MainActivity.this, BlurTwoActivity.class));
-
-
-                            break;
-                        case "布局测试":
-                            startActivity(new Intent(MainActivity.this, TestBuJuActivity.class));
 
 
                             break;
@@ -455,7 +423,7 @@ public class MainActivity extends BaseActivity {
                             startActivity(new Intent(MainActivity.this, EnumActivity.class));
                             break;
                         case "ViewFlipper+CountDownTimer":
-                            startActivity(new Intent(MainActivity.this,ViewFlipperActivity.class));
+                            startActivity(new Intent(MainActivity.this, ViewFlipperActivity.class));
                             break;
                         case "Salvage":
                             startActivity(new Intent(MainActivity.this, SalvageActivity.class));
@@ -474,6 +442,9 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "AddView":
                             startActivity(new Intent(MainActivity.this, AddViewActivity.class));
+                            break;
+                        case "广播封装":
+                            startActivity(new Intent(MainActivity.this, BroacdCastDemoActivity.class));
                             break;
                         default:
                             break;

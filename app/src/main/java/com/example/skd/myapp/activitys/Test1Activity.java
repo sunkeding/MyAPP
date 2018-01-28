@@ -11,8 +11,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.skd.myapp.R;
+import com.example.skd.myapp.appconfig.BroadCastConfig;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.blur.BlurBehind;
+import com.example.skd.myapp.broadcast.BroadcastManager;
 import com.example.skd.myapp.utils.FastBlurUtil;
 
 import butterknife.Bind;
@@ -44,6 +46,7 @@ public class Test1Activity extends BaseActivity {
                 .withAlpha(80)
                 .withFilterColor(Color.parseColor("#d0ffffff"))
                 .setBackground(this);
+        BroadcastManager.getInstance(this).sendBroadcast(BroadCastConfig.TEST_BROADCAST_KEY1);
     }
 
     @Override
@@ -63,10 +66,7 @@ public class Test1Activity extends BaseActivity {
         startActivity(new Intent(this, Test2Activity.class));
     }
 
-    public static void methed() {
-//        Toast.makeText(this, "我是TestActivity中的方法", Toast.LENGTH_SHORT).show();
-        Log.d("Test1Activity", "我是TestActivity中的方法");
-    }
+
 
     public interface MyListener {
         void call();
