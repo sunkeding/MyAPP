@@ -32,7 +32,6 @@ import com.example.skd.myapp.activitys.H5ToNativeActivity;
 import com.example.skd.myapp.activitys.HandlerThreadActivity;
 import com.example.skd.myapp.activitys.LevelViewActivity;
 import com.example.skd.myapp.activitys.LikeDialogActivity;
-import com.example.skd.myapp.activitys.ListActivity;
 import com.example.skd.myapp.activitys.ListViewDemo;
 import com.example.skd.myapp.activitys.LocalPushActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
@@ -200,7 +199,6 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("用Activity实现Dialog效果"));
         list.add(new SampleBean("高斯模糊效果2"));
         list.add(new SampleBean("自定义View画圆角矩形"));
-        list.add(new SampleBean("ListView"));
         list.add(new SampleBean("Activity切换动画"));
         list.add(new SampleBean("OKhttp"));
         list.add(new SampleBean("DialogFragment"));
@@ -365,11 +363,6 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "自定义View画圆角矩形":
                             startActivity(new Intent(MainActivity.this, PaintActivity.class));
-
-
-                            break;
-                        case "ListView":
-                            startActivity(new Intent(MainActivity.this, ListActivity.class));
 
 
                             break;

@@ -198,7 +198,7 @@
 
     <color name="light_grey">#19000000</color>
     <color name="grey4">#22222c</color>
-    <color name="text_color_black30">#22222c</color>
+    <color name="text_color_black30">#4D000000</color>
     <color name="line_color_black5">#22222c</color>
     <color name="line_color_black10">#22222c</color>
     <color name="btn_bg">#FA4A11</color>
