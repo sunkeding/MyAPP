@@ -44,7 +44,7 @@ public class LocalPushActivity extends Activity {
 
         //2.指定通知的标题、内容和intent
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, AddViewActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);

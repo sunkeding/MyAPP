@@ -21,7 +21,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.example.skd.myapp"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "2.0.0"
@@ -111,6 +111,8 @@ dependencies {
     compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
     compile 'com.android.support:design:25.2.0'
     compile files('libs/fastjson-1.2.5.jar')
+
+    compile 'com.leoao:lefit_image:0.1.0'
 }
 
 walle {

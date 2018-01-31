@@ -56,9 +56,12 @@ import com.example.skd.myapp.activitys.WaterMarkActivity;
 import com.example.skd.myapp.activitys.WebActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
+import com.example.skd.myapp.fragment.IMTopTipViewFragment;
 import com.example.skd.myapp.receiver.AutoReceiver;
 import com.example.skd.myapp.salvage.SalvageActivity;
+import com.example.skd.myapp.utils.DisplayUtil;
 import com.example.skd.myapp.views.RecycleViewDivier;
+import com.leoao.image.utils.ImageCDNUtils;
 import com.taobao.android.SophixManager;
 import com.taobao.android.listener.PatchLoadStatusListener;
 import com.tbruyelle.rxpermissions.RxPermissions;
@@ -89,8 +92,11 @@ public class MainActivity extends BaseActivity {
         initHotfix();
         testPush();
         showTipDialog();
-        startActivity(new Intent(MainActivity.this, LevelViewActivity.class));
-
+//        startActivity(new Intent(MainActivity.this, LevelViewActivity.class));
+        int height = DisplayUtil.dip2px(this,160);
+        String url="https://img.leoao.com/2018/01/28/FrQYZjVgzwe4XpnNKC-EMlEqPe1y.jpg";
+        String smallPic = ImageCDNUtils.getAppropriateUrl(url,height,height);
+        Log.d("MainActivity","smallPic="+ smallPic);
     }
 
     private void showTipDialog() {
@@ -222,6 +228,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("AddView"));
         list.add(new SampleBean("广播封装"));
         list.add(new SampleBean("ResultReceiver"));
+        list.add(new SampleBean("CustomDialogFragment"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -229,6 +236,8 @@ public class MainActivity extends BaseActivity {
         MyAdapter myAdapter = new MyAdapter(list);
         recycleview.setAdapter(myAdapter);
         myAdapter.notifyDataSetChanged();
+
+
     }
 
     @Override
@@ -443,6 +452,10 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "ResultReceiver":
                             startActivity(new Intent(MainActivity.this, ResultReceiverActivity.class));
+                            break;
+                        case "CustomDialogFragment":
+                            IMTopTipViewFragment dia=new IMTopTipViewFragment();
+                            dia.show(getFragmentManager(),"show");
                             break;
                         default:
                             break;
