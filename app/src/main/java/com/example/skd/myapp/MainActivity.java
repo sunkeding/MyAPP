@@ -8,6 +8,7 @@ import android.os.Looper;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -35,7 +36,6 @@ import com.example.skd.myapp.activitys.LikeDialogActivity;
 import com.example.skd.myapp.activitys.ListViewDemo;
 import com.example.skd.myapp.activitys.LocalPushActivity;
 import com.example.skd.myapp.activitys.MulpitleSelectedActivity;
-import com.example.skd.myapp.activitys.NetActivity;
 import com.example.skd.myapp.activitys.NewShadowActivity;
 import com.example.skd.myapp.activitys.NineOldActivity;
 import com.example.skd.myapp.activitys.OkHttpActivity;
@@ -49,6 +49,9 @@ import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
 import com.example.skd.myapp.activitys.Test1Activity;
 import com.example.skd.myapp.activitys.TimeActivity;
+import com.example.skd.myapp.activitys.TimeAddActivity;
+import com.example.skd.myapp.activitys.TimerActivity;
+import com.example.skd.myapp.activitys.UCToastActivity;
 import com.example.skd.myapp.activitys.ViewHelperActivity;
 import com.example.skd.myapp.activitys.ViewPagerActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
@@ -59,9 +62,8 @@ import com.example.skd.myapp.bean.SampleBean;
 import com.example.skd.myapp.fragment.IMTopTipViewFragment;
 import com.example.skd.myapp.receiver.AutoReceiver;
 import com.example.skd.myapp.salvage.SalvageActivity;
-import com.example.skd.myapp.utils.DisplayUtil;
+import com.example.skd.myapp.toast.UniversalToast;
 import com.example.skd.myapp.views.RecycleViewDivier;
-import com.leoao.image.utils.ImageCDNUtils;
 import com.taobao.android.SophixManager;
 import com.taobao.android.listener.PatchLoadStatusListener;
 import com.tbruyelle.rxpermissions.RxPermissions;
@@ -93,10 +95,7 @@ public class MainActivity extends BaseActivity {
         testPush();
         showTipDialog();
 //        startActivity(new Intent(MainActivity.this, LevelViewActivity.class));
-        int height = DisplayUtil.dip2px(this,160);
-        String url="https://img.leoao.com/2018/01/28/FrQYZjVgzwe4XpnNKC-EMlEqPe1y.jpg";
-        String smallPic = ImageCDNUtils.getAppropriateUrl(url,height,height);
-        Log.d("MainActivity","smallPic="+ smallPic);
+
     }
 
     private void showTipDialog() {
@@ -229,6 +228,9 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("广播封装"));
         list.add(new SampleBean("ResultReceiver"));
         list.add(new SampleBean("CustomDialogFragment"));
+        list.add(new SampleBean("UCToast"));
+        list.add(new SampleBean("秒表效果"));
+        list.add(new SampleBean("TimerActivity"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -269,8 +271,11 @@ public class MainActivity extends BaseActivity {
                 public void onClick(View v) {
                     switch (mydata.get(position).getIntroduce()) {
                         case "Retrofit相关":
-
-                            startActivity(new Intent(MainActivity.this, NetActivity.class));
+                            UniversalToast.makeText(MainActivity.this, "关注成功", UniversalToast.LENGTH_SHORT, UniversalToast.UNIVERSAL)
+                                    .setGravity(Gravity.CENTER, 0, 0)
+                                    .setIcon(R.drawable.ic_done_white_24dp)
+                                    .show();
+//                            startActivity(new Intent(MainActivity.this, NetActivity.class));
 //                            Log.d("MyAdapter", null);//先故意写个闪退，再通过打补丁的方式修复
 //                            Toast.makeText(MainActivity.this, "修复了闪退的BUG", Toast.LENGTH_SHORT).show();
                             break;
@@ -454,8 +459,17 @@ public class MainActivity extends BaseActivity {
                             startActivity(new Intent(MainActivity.this, ResultReceiverActivity.class));
                             break;
                         case "CustomDialogFragment":
-                            IMTopTipViewFragment dia=new IMTopTipViewFragment();
-                            dia.show(getFragmentManager(),"show");
+                            IMTopTipViewFragment dia = new IMTopTipViewFragment();
+                            dia.show(getFragmentManager(), "show");
+                            break;
+                        case "UCToast":
+                            startActivity(new Intent(MainActivity.this, UCToastActivity.class));
+                            break;
+                        case "秒表效果":
+                            startActivity(new Intent(MainActivity.this, TimeAddActivity.class));
+                            break;
+                        case "TimerActivity":
+                            startActivity(new Intent(MainActivity.this, TimerActivity.class));
                             break;
                         default:
                             break;

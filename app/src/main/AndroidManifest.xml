@@ -21,6 +21,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_SMS" />
 
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
     <application
         android:name=".app.MyApplication"
         android:allowBackup="true"
@@ -63,6 +70,7 @@
         <activity android:name=".activitys.ViewStubAndMergeActivity" />
         <activity android:name=".activitys.ViewStubActivity" />
         <activity android:name=".activitys.MergeActivity" />
+
         <receiver
             android:name=".receiver.AutoReceiver"
             android:label="@string/app_name">
@@ -73,8 +81,9 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.AlarmReceiver" android:process=":remote"
-            android:label="@string/app_name">
+            android:name=".receiver.AlarmReceiver"
+            android:label="@string/app_name"
+            android:process=":remote">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
 
@@ -88,28 +97,28 @@
 
         <!--&lt;!&ndash; Ping++ SDK &ndash;&gt;-->
         <!--<activity-->
-            <!--android:name="com.pingplusplus.android.PaymentActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
-            <!--android:launchMode="singleTop"-->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--android:name="com.pingplusplus.android.PaymentActivity"-->
+        <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+        <!--android:launchMode="singleTop"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
 
         <!--&lt;!&ndash; 微信支付 &ndash;&gt;-->
         <!--<activity-alias-->
-            <!--android:name=".wxapi.WXPayEntryActivity"-->
-            <!--android:exported="true"-->
-            <!--android:targetActivity="com.pingplusplus.android.PaymentActivity" />-->
+        <!--android:name=".wxapi.WXPayEntryActivity"-->
+        <!--android:exported="true"-->
+        <!--android:targetActivity="com.pingplusplus.android.PaymentActivity" />-->
 
         <!--&lt;!&ndash; 支付宝 &ndash;&gt;-->
         <!--<activity-->
-            <!--android:name="com.alipay.sdk.app.H5PayActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
-            <!--android:exported="false"-->
-            <!--android:screenOrientation="behind"></activity>-->
+        <!--android:name="com.alipay.sdk.app.H5PayActivity"-->
+        <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+        <!--android:exported="false"-->
+        <!--android:screenOrientation="behind"></activity>-->
         <!--<activity-->
-            <!--android:name="com.alipay.sdk.auth.AuthActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
-            <!--android:exported="false"-->
-            <!--android:screenOrientation="behind"></activity>-->
+        <!--android:name="com.alipay.sdk.auth.AuthActivity"-->
+        <!--android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+        <!--android:exported="false"-->
+        <!--android:screenOrientation="behind"></activity>-->
         <activity android:name=".activitys.CountDownActivity" />
         <activity android:name=".activitys.Test1Activity" />
         <activity android:name=".activitys.Test2Activity" />
@@ -129,7 +138,9 @@
         <activity android:name=".activitys.ShuiYinActivity" />
         <activity android:name=".activitys.TimeActivity" />
         <!--<activity android:name=".activitys.LikeDialogActivity" />-->
-        <activity android:name=".activitys.LikeDialogActivity"  android:theme="@style/MyDialogTopRight" />
+        <activity
+            android:name=".activitys.LikeDialogActivity"
+            android:theme="@style/MyDialogTopRight" />
         <activity android:name=".activitys.BlurTwoActivity" />
         <activity android:name=".activitys.PaintActivity" />
         <activity android:name=".activitys.AnimActivity" />
@@ -152,13 +163,35 @@
         <activity android:name=".activitys.LevelViewActivity" />
         <activity android:name=".activitys.LocalPushActivity" />
         <activity android:name=".activitys.AlarmActivity" />
-        <activity android:name=".activitys.TranslateDialogActivity"
-            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name=".activitys.TranslateDialogActivity"
+            android:theme="@android:style/Theme.Translucent" />
         <activity android:name=".activitys.AddViewActivity" />
         <activity android:name=".activitys.BroacdCastDemoActivity" />
         <activity android:name=".activitys.ResultReceiverActivity" />
+        <activity
+            android:name=".activitys.UCToastActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activitys.TimeAddActivity" />
+        <activity android:name=".activitys.TimerActivity" />
 
         <service android:name=".MyIntentService"></service>
+        <service
+            android:name=".uctoast.ListenClipboardService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":process"></service>
+
+        <receiver
+            android:name=".uctoast.BootCompletedReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

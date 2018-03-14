@@ -6,5 +6,6 @@
     <dimen name="min_header_height">250dp</dimen>
     <dimen name="header_logo_size">100dp</dimen>
     <dimen name="dsrv_defaultHotspotHeight">56dp</dimen>
-
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="pagemargin">16dp</dimen>
 </resources>
