@@ -176,6 +176,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activitys.TimeAddActivity" />
         <activity android:name=".activitys.TimerActivity" />
+        <activity android:name=".activitys.SeekBarActivity" />
+        <activity android:name=".activitys.RemoveRepeatActivity" />
 
         <service android:name=".MyIntentService"></service>
         <service

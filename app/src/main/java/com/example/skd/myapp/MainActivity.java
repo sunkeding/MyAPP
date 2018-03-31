@@ -42,8 +42,10 @@ import com.example.skd.myapp.activitys.OkHttpActivity;
 import com.example.skd.myapp.activitys.PaintActivity;
 import com.example.skd.myapp.activitys.RXjavaActivity;
 import com.example.skd.myapp.activitys.RectActivity;
+import com.example.skd.myapp.activitys.RemoveRepeatActivity;
 import com.example.skd.myapp.activitys.ResultReceiverActivity;
 import com.example.skd.myapp.activitys.ScreenShotActivity;
+import com.example.skd.myapp.activitys.SeekBarActivity;
 import com.example.skd.myapp.activitys.ShadowHelperActivity;
 import com.example.skd.myapp.activitys.ShadowViewActivity;
 import com.example.skd.myapp.activitys.ShuiYinActivity;
@@ -231,6 +233,8 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("UCToast"));
         list.add(new SampleBean("秒表效果"));
         list.add(new SampleBean("TimerActivity"));
+        list.add(new SampleBean("SeekBar"));
+        list.add(new SampleBean("测试去除重复对象"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -470,6 +474,12 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "TimerActivity":
                             startActivity(new Intent(MainActivity.this, TimerActivity.class));
+                            break;
+                        case "SeekBar":
+                            startActivity(new Intent(MainActivity.this, SeekBarActivity.class));
+                            break;
+                        case "测试去除重复对象":
+                            startActivity(new Intent(MainActivity.this, RemoveRepeatActivity.class));
                             break;
                         default:
                             break;
