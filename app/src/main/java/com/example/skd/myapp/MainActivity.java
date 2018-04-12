@@ -64,6 +64,7 @@ import com.example.skd.myapp.bean.SampleBean;
 import com.example.skd.myapp.fragment.IMTopTipViewFragment;
 import com.example.skd.myapp.receiver.AutoReceiver;
 import com.example.skd.myapp.salvage.SalvageActivity;
+import com.example.skd.myapp.testlogin.LoginAndGotoTargetActivity;
 import com.example.skd.myapp.toast.UniversalToast;
 import com.example.skd.myapp.views.RecycleViewDivier;
 import com.taobao.android.SophixManager;
@@ -235,6 +236,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("TimerActivity"));
         list.add(new SampleBean("SeekBar"));
         list.add(new SampleBean("测试去除重复对象"));
+        list.add(new SampleBean("登录并跳转到目标页面"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -480,6 +482,9 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "测试去除重复对象":
                             startActivity(new Intent(MainActivity.this, RemoveRepeatActivity.class));
+                            break;
+                        case "登录并跳转到目标页面":
+                            startActivity(new Intent(MainActivity.this, LoginAndGotoTargetActivity.class));
                             break;
                         default:
                             break;

@@ -178,6 +178,22 @@
         <activity android:name=".activitys.TimerActivity" />
         <activity android:name=".activitys.SeekBarActivity" />
         <activity android:name=".activitys.RemoveRepeatActivity" />
+        <activity android:name=".testlogin.LoginAndGotoTargetActivity" />
+        <activity android:name=".testlogin.LoginActivity" />
+        <activity android:name=".testlogin.ThirdActivity" >
+            <intent-filter>
+                <action android:name="com.example.skd.myapp.testlogin.ThirdActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".testlogin.SecondActivity" >
+            <intent-filter>
+                <action android:name="com.example.skd.myapp.testlogin.SecondActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <service android:name=".MyIntentService"></service>
         <service
