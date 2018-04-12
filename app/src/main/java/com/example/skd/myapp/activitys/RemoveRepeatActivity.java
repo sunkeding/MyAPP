@@ -32,10 +32,16 @@ public class RemoveRepeatActivity extends Activity {
             Student bean = new Student(String.valueOf(i), "name" + i);
             appendList.add(bean);
         }
-        for (int i = 10; i < 20; i++) {
+
+        for (int i = 5; i < 8; i++) {
             Student bean = new Student(String.valueOf(i), "name" + i);
             appendList2.add(bean);
         }
+        for (int i = 10; i < 18; i++) {
+            Student bean = new Student(String.valueOf(i), "name" + i);
+            appendList2.add(bean);
+        }
+        Log.d("RemoveRepeatActivity", "appendList2.size():" + appendList2.size());
     }
 
     public void addData(View view) {
@@ -69,7 +75,7 @@ public class RemoveRepeatActivity extends Activity {
     }
 
     public void judgeData2(View view) {
-        Student student = new Student("11", "name11");
+        Student student = new Student("111", "name111");
         boolean contains = list.contains(student);
         Log.d("RemoveRepeatActivity", "contains:" + contains);
     }
