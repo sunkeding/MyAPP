@@ -43,7 +43,7 @@ public class ThirdActivity extends Activity {
 	public void login(View v) {
 		Bundle bun = new Bundle();
 		bun.putString("intentMyself", "可以进行收藏的操作了");
-		LoginInterceptor.interceptor(this, "com.example.logininterceptor.ThirdActivity", bun);
+		LoginInterceptor.interceptor(this, "com.example.skd.myapp.testlogin.ThirdActivity", bun);
 	}
 
 }

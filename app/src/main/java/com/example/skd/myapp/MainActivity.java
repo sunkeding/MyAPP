@@ -64,6 +64,7 @@ import com.example.skd.myapp.bean.SampleBean;
 import com.example.skd.myapp.fragment.IMTopTipViewFragment;
 import com.example.skd.myapp.receiver.AutoReceiver;
 import com.example.skd.myapp.salvage.SalvageActivity;
+import com.example.skd.myapp.staggeredgrid.StagGridMainActivity;
 import com.example.skd.myapp.testlogin.LoginAndGotoTargetActivity;
 import com.example.skd.myapp.toast.UniversalToast;
 import com.example.skd.myapp.views.RecycleViewDivier;
@@ -237,6 +238,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("SeekBar"));
         list.add(new SampleBean("测试去除重复对象"));
         list.add(new SampleBean("登录并跳转到目标页面"));
+        list.add(new SampleBean("瀑布流"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -485,6 +487,9 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "登录并跳转到目标页面":
                             startActivity(new Intent(MainActivity.this, LoginAndGotoTargetActivity.class));
+                            break;
+                        case "瀑布流":
+                            startActivity(new Intent(MainActivity.this, StagGridMainActivity.class));
                             break;
                         default:
                             break;

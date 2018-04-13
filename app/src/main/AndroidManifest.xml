@@ -194,6 +194,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".staggeredgrid.StagGridMainActivity" />
+        <activity android:name=".staggeredgrid.StaggeredGridEmptyViewActivity" />
+        <activity android:name=".staggeredgrid.StaggeredGridActivity" />
+        <activity android:name=".staggeredgrid.ListViewActivity" />
+        <activity android:name=".staggeredgrid.StaggeredGridActivityFragment" />
 
         <service android:name=".MyIntentService"></service>
         <service
