@@ -239,6 +239,7 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("测试去除重复对象"));
         list.add(new SampleBean("登录并跳转到目标页面"));
         list.add(new SampleBean("瀑布流"));
+        list.add(new SampleBean("Fragment栈"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -490,6 +491,9 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "瀑布流":
                             startActivity(new Intent(MainActivity.this, StagGridMainActivity.class));
+                            break;
+                        case "Fragment栈":
+                            startActivity(new Intent(MainActivity.this, FragmentStackActivity.class));
                             break;
                         default:
                             break;

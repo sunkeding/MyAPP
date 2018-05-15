@@ -199,6 +199,7 @@
         <activity android:name=".staggeredgrid.StaggeredGridActivity" />
         <activity android:name=".staggeredgrid.ListViewActivity" />
         <activity android:name=".staggeredgrid.StaggeredGridActivityFragment" />
+        <activity android:name=".FragmentStackActivity" />
 
         <service android:name=".MyIntentService"></service>
         <service
