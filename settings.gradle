@@ -1,1 +1,1 @@
-include ':app', ':skd_net'
+include ':app', ':skd_net', ':lib_qnvideo'

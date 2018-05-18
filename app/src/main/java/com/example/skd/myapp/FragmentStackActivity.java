@@ -44,10 +44,10 @@ public class FragmentStackActivity extends FragmentActivity {
     }
 
     private void fragmentPop() {
-        int count = supportFragmentManager.getBackStackEntryCount();
-        Log.d("FragmentStackActivity", "count:" + count);
+//        int count = supportFragmentManager.getBackStackEntryCount();
+//        Log.d("FragmentStackActivity", "count:" + supportFragmentManager.getBackStackEntryCount());
 
-        if (count>1){
+        if (supportFragmentManager.getBackStackEntryCount()>1){
             supportFragmentManager.popBackStack();
         }else {
             finish();
