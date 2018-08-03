@@ -59,6 +59,7 @@ import com.example.skd.myapp.activitys.ViewPagerActivity;
 import com.example.skd.myapp.activitys.ViewStubAndMergeActivity;
 import com.example.skd.myapp.activitys.WaterMarkActivity;
 import com.example.skd.myapp.activitys.WebActivity;
+import com.example.skd.myapp.activitys.movetasktoback.MoveTaskToBackActivity;
 import com.example.skd.myapp.base.BaseActivity;
 import com.example.skd.myapp.bean.SampleBean;
 import com.example.skd.myapp.fragment.IMTopTipViewFragment;
@@ -240,6 +241,8 @@ public class MainActivity extends BaseActivity {
         list.add(new SampleBean("登录并跳转到目标页面"));
         list.add(new SampleBean("瀑布流"));
         list.add(new SampleBean("Fragment栈"));
+        list.add(new SampleBean("moveTaskToBack"));
+        list.add(new SampleBean("ConstrainLayout"));
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(
                 new RecycleViewDivier(this, LinearLayoutManager.HORIZONTAL, 2,
@@ -494,6 +497,12 @@ public class MainActivity extends BaseActivity {
                             break;
                         case "Fragment栈":
                             startActivity(new Intent(MainActivity.this, FragmentStackActivity.class));
+                            break;
+                        case "moveTaskToBack":
+                            startActivity(new Intent(MainActivity.this, MoveTaskToBackActivity.class));
+                            break;
+                        case "ConstrainLayout":
+                            startActivity(new Intent(MainActivity.this, ConstrainLayoutDemoActivity.class));
                             break;
                         default:
                             break;

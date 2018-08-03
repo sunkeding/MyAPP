@@ -200,6 +200,8 @@
         <activity android:name=".staggeredgrid.ListViewActivity" />
         <activity android:name=".staggeredgrid.StaggeredGridActivityFragment" />
         <activity android:name=".FragmentStackActivity" />
+        <activity android:name=".activitys.movetasktoback.MoveTaskToBackActivity" />
+        <activity android:name=".ConstrainLayoutDemoActivity" />
 
         <service android:name=".MyIntentService"></service>
         <service

@@ -272,6 +272,8 @@
     <color name="white_60">#99ffffff</color>
 
     <color name="list_item_pressed">#1A000000</color>
+
+    <color name="exercise_color_red30">#B3FB5C3B</color>
 </resources>
 
 
